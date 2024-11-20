@@ -12,8 +12,6 @@ namespace ManejoDeImagenes
     {
         internal static Image cortarImagen(Image pImagenEntrada)
         {
-
-
             BitmapData imagenOriginalDatos = ((Bitmap)pImagenEntrada).LockBits(new Rectangle(0, 0, pImagenEntrada.Width, pImagenEntrada.Height), ImageLockMode.ReadWrite, pImagenEntrada.PixelFormat);
 
             int altoImagen = imagenOriginalDatos.Height;

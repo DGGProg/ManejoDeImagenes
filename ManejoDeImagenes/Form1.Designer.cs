@@ -42,13 +42,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btCortar = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.imagenAntesCorte = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.imagenDespuesCorte = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.imagenDespuesCuant = new System.Windows.Forms.PictureBox();
-            this.imagenAntesCuant = new System.Windows.Forms.PictureBox();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
@@ -57,7 +55,6 @@
             this.imagenGrisLuminosity = new System.Windows.Forms.PictureBox();
             this.imagenGrisAverage = new System.Windows.Forms.PictureBox();
             this.imagenGrisLightness = new System.Windows.Forms.PictureBox();
-            this.imagenColor = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
             this.imgSep8 = new System.Windows.Forms.PictureBox();
@@ -68,18 +65,15 @@
             this.imgSep3 = new System.Windows.Forms.PictureBox();
             this.imgSep2 = new System.Windows.Forms.PictureBox();
             this.imgSep1 = new System.Windows.Forms.PictureBox();
-            this.imgSepOrigen = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.btnImgOcultar = new System.Windows.Forms.Button();
             this.imgAOcultar = new System.Windows.Forms.PictureBox();
             this.ocultarMensaje = new System.Windows.Forms.Button();
             this.imgMensajeEstaganografia = new System.Windows.Forms.PictureBox();
-            this.imgOrigenEstaganografia = new System.Windows.Forms.PictureBox();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.imgDespuesOpUn = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.imgAntesOpUn = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -128,12 +122,10 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.imgUmbralBinarioDespues = new System.Windows.Forms.PictureBox();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.imgUmbralBinarioAntes = new System.Windows.Forms.PictureBox();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
             this.imgUmbralCorteDespues = new System.Windows.Forms.PictureBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.imgUmbralCorteAntes = new System.Windows.Forms.PictureBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.umbralCorteExtencion = new System.Windows.Forms.CheckBox();
             this.umbralCorteInverso = new System.Windows.Forms.CheckBox();
@@ -166,7 +158,6 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.imagenUmbralesEscalonDespues = new System.Windows.Forms.PictureBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.imagenUmbralesEscalonAntes = new System.Windows.Forms.PictureBox();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.txtPesoSuma2 = new System.Windows.Forms.NumericUpDown();
             this.txtPesoSuma1 = new System.Windows.Forms.NumericUpDown();
@@ -214,13 +205,11 @@
             this.txtConexas = new System.Windows.Forms.TextBox();
             this.btComponentesConexas = new System.Windows.Forms.Button();
             this.panel24 = new System.Windows.Forms.Panel();
-            this.imagenComponentesConexas = new System.Windows.Forms.PictureBox();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
             this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
             this.btHistograma = new System.Windows.Forms.Button();
             this.panel28 = new System.Windows.Forms.Panel();
-            this.imagenHistograma = new System.Windows.Forms.PictureBox();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.btEstirar = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -243,7 +232,6 @@
             this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.imagenHistogramaEstiramientoOrigen = new System.Windows.Forms.PictureBox();
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage16 = new System.Windows.Forms.TabPage();
@@ -255,7 +243,6 @@
             this.controlHistogramasEqualizacion2 = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.imagenEqualizacionEntrada = new System.Windows.Forms.PictureBox();
             this.tabPage22 = new System.Windows.Forms.TabPage();
             this.controlHistogramasEqualizacion1 = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage25 = new System.Windows.Forms.TabPage();
@@ -282,7 +269,6 @@
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.panel27 = new System.Windows.Forms.Panel();
-            this.imgRuidoAnt = new System.Windows.Forms.PictureBox();
             this.panel29 = new System.Windows.Forms.Panel();
             this.imgRuidoDes = new System.Windows.Forms.PictureBox();
             this.tabPage26 = new System.Windows.Forms.TabPage();
@@ -303,7 +289,6 @@
             this.fMedia = new System.Windows.Forms.RadioButton();
             this.aplicaFiltro = new System.Windows.Forms.Button();
             this.panel31 = new System.Windows.Forms.Panel();
-            this.imgFiltrosEntrada = new System.Windows.Forms.PictureBox();
             this.panel32 = new System.Windows.Forms.Panel();
             this.imgFiltrosSalida = new System.Windows.Forms.PictureBox();
             this.tabPage27 = new System.Windows.Forms.TabPage();
@@ -317,7 +302,6 @@
             this.imgSalidaBorde_1_3 = new System.Windows.Forms.PictureBox();
             this.Borde_1 = new System.Windows.Forms.Button();
             this.panel34 = new System.Windows.Forms.Panel();
-            this.imgEntradaBordes_1 = new System.Windows.Forms.PictureBox();
             this.panel35 = new System.Windows.Forms.Panel();
             this.imgSalidaBorde_1_1 = new System.Windows.Forms.PictureBox();
             this.tabPage28 = new System.Windows.Forms.TabPage();
@@ -331,7 +315,6 @@
             this.imgSalidaBordes_2_3 = new System.Windows.Forms.PictureBox();
             this.Bordes_2 = new System.Windows.Forms.Button();
             this.panel43 = new System.Windows.Forms.Panel();
-            this.imgEntradaBordes_2 = new System.Windows.Forms.PictureBox();
             this.panel44 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_2_1 = new System.Windows.Forms.PictureBox();
             this.tabPage29 = new System.Windows.Forms.TabPage();
@@ -345,14 +328,12 @@
             this.imgSalidaBordes_3_3 = new System.Windows.Forms.PictureBox();
             this.Bordes_3 = new System.Windows.Forms.Button();
             this.panel49 = new System.Windows.Forms.Panel();
-            this.imgEntradaBordes_3 = new System.Windows.Forms.PictureBox();
             this.panel50 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_3_1 = new System.Windows.Forms.PictureBox();
             this.tabPage30 = new System.Windows.Forms.TabPage();
             this.panel51 = new System.Windows.Forms.Panel();
             this.MagGrad = new System.Windows.Forms.Button();
             this.panel52 = new System.Windows.Forms.Panel();
-            this.imgEntradaMagGrad = new System.Windows.Forms.PictureBox();
             this.panel53 = new System.Windows.Forms.Panel();
             this.imgSalidaMagGrad = new System.Windows.Forms.PictureBox();
             this.tabPage31 = new System.Windows.Forms.TabPage();
@@ -361,9 +342,9 @@
             this.imgPerfiladoSalida_2 = new System.Windows.Forms.PictureBox();
             this.Perfilado = new System.Windows.Forms.Button();
             this.panel58 = new System.Windows.Forms.Panel();
-            this.imgPerfiladoEntrada = new System.Windows.Forms.PictureBox();
             this.panel59 = new System.Windows.Forms.Panel();
             this.imgPerfiladoSalida_1 = new System.Windows.Forms.PictureBox();
+            this.imagenOriginalZoom = new System.Windows.Forms.PictureBox();
             this.splitter1 = new System.Windows.Forms.Splitter();
             this.imagenAntes = new System.Windows.Forms.PictureBox();
             this.imagenDespues = new System.Windows.Forms.PictureBox();
@@ -390,19 +371,15 @@
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenAntesCorte)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespuesCorte)).BeginInit();
             this.tabPage4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespuesCuant)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenAntesCuant)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLuminosity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisAverage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLightness)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenColor)).BeginInit();
             this.tabPage6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep7)).BeginInit();
@@ -412,16 +389,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSep3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSepOrigen)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgAOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMensajeEstaganografia)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgOrigenEstaganografia)).BeginInit();
             this.tabPage1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgDespuesOpUn)).BeginInit();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgAntesOpUn)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mult1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.suma2)).BeginInit();
@@ -446,13 +419,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.umbralBinarioInferiorC3)).BeginInit();
             this.panel6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUmbralBinarioDespues)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmbralBinarioAntes)).BeginInit();
             this.tabPage8.SuspendLayout();
             this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUmbralCorteDespues)).BeginInit();
-            this.panel10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmbralCorteAntes)).BeginInit();
             this.panel8.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.umbralCorteInferiorC1)).BeginInit();
@@ -465,8 +434,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.txtNumUmbrales)).BeginInit();
             this.panel12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenUmbralesEscalonDespues)).BeginInit();
-            this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenUmbralesEscalonAntes)).BeginInit();
             this.tabPage10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPesoSuma2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtPesoSuma1)).BeginInit();
@@ -494,12 +461,8 @@
             this.panel23.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenBoolenaResultado)).BeginInit();
             this.tabPage13.SuspendLayout();
-            this.panel24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenComponentesConexas)).BeginInit();
             this.tabPage14.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.panel28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenHistograma)).BeginInit();
             this.tabPage15.SuspendLayout();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtLimiteInferiorEstirar_1)).BeginInit();
@@ -513,8 +476,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenHistogramaEstiramientoSalida)).BeginInit();
             this.tabPage20.SuspendLayout();
             this.tabControl2.SuspendLayout();
-            this.tabPage17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenHistogramaEstiramientoOrigen)).BeginInit();
             this.tabPage18.SuspendLayout();
             this.tabPage16.SuspendLayout();
             this.tabControl5.SuspendLayout();
@@ -522,8 +483,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenEqualizacionSalida)).BeginInit();
             this.tabPage24.SuspendLayout();
             this.tabControl4.SuspendLayout();
-            this.tabPage21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenEqualizacionEntrada)).BeginInit();
             this.tabPage22.SuspendLayout();
             this.tabPage25.SuspendLayout();
             this.panel26.SuspendLayout();
@@ -531,8 +490,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.RuidoGauss)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RuidoNormal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.RuidoSyP)).BeginInit();
-            this.panel27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgRuidoAnt)).BeginInit();
             this.panel29.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRuidoDes)).BeginInit();
             this.tabPage26.SuspendLayout();
@@ -541,8 +498,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.sigma_filtro)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tamano_mascara)).BeginInit();
             this.GBfiltros.SuspendLayout();
-            this.panel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgFiltrosEntrada)).BeginInit();
             this.panel32.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgFiltrosSalida)).BeginInit();
             this.tabPage27.SuspendLayout();
@@ -553,8 +508,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBorde_1_2)).BeginInit();
             this.panel36.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBorde_1_3)).BeginInit();
-            this.panel34.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_1)).BeginInit();
             this.panel35.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBorde_1_1)).BeginInit();
             this.tabPage28.SuspendLayout();
@@ -565,8 +518,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_2_2)).BeginInit();
             this.panel42.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_2_3)).BeginInit();
-            this.panel43.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_2)).BeginInit();
             this.panel44.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_2_1)).BeginInit();
             this.tabPage29.SuspendLayout();
@@ -577,24 +528,19 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_3_2)).BeginInit();
             this.panel48.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_3_3)).BeginInit();
-            this.panel49.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_3)).BeginInit();
             this.panel50.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_3_1)).BeginInit();
             this.tabPage30.SuspendLayout();
             this.panel51.SuspendLayout();
-            this.panel52.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaMagGrad)).BeginInit();
             this.panel53.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaMagGrad)).BeginInit();
             this.tabPage31.SuspendLayout();
             this.panel54.SuspendLayout();
             this.panel56.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoSalida_2)).BeginInit();
-            this.panel58.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoEntrada)).BeginInit();
             this.panel59.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoSalida_1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenOriginalZoom)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenAntes)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespues)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gananciaAzul)).BeginInit();
@@ -737,20 +683,10 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.imagenAntesCorte);
             this.panel2.Location = new System.Drawing.Point(7, 56);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(651, 612);
             this.panel2.TabIndex = 4;
-            // 
-            // imagenAntesCorte
-            // 
-            this.imagenAntesCorte.Location = new System.Drawing.Point(0, 0);
-            this.imagenAntesCorte.Name = "imagenAntesCorte";
-            this.imagenAntesCorte.Size = new System.Drawing.Size(650, 600);
-            this.imagenAntesCorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imagenAntesCorte.TabIndex = 0;
-            this.imagenAntesCorte.TabStop = false;
             // 
             // panel3
             // 
@@ -774,7 +710,6 @@
             // 
             this.tabPage4.Controls.Add(this.numericUpDown1);
             this.tabPage4.Controls.Add(this.imagenDespuesCuant);
-            this.tabPage4.Controls.Add(this.imagenAntesCuant);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(1333, 674);
@@ -814,15 +749,6 @@
             this.imagenDespuesCuant.TabIndex = 2;
             this.imagenDespuesCuant.TabStop = false;
             // 
-            // imagenAntesCuant
-            // 
-            this.imagenAntesCuant.Location = new System.Drawing.Point(3, 71);
-            this.imagenAntesCuant.Name = "imagenAntesCuant";
-            this.imagenAntesCuant.Size = new System.Drawing.Size(650, 600);
-            this.imagenAntesCuant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imagenAntesCuant.TabIndex = 1;
-            this.imagenAntesCuant.TabStop = false;
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.button2);
@@ -832,7 +758,6 @@
             this.tabPage5.Controls.Add(this.imagenGrisLuminosity);
             this.tabPage5.Controls.Add(this.imagenGrisAverage);
             this.tabPage5.Controls.Add(this.imagenGrisLightness);
-            this.tabPage5.Controls.Add(this.imagenColor);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(1333, 674);
@@ -904,15 +829,6 @@
             this.imagenGrisLightness.TabIndex = 3;
             this.imagenGrisLightness.TabStop = false;
             // 
-            // imagenColor
-            // 
-            this.imagenColor.Location = new System.Drawing.Point(3, 71);
-            this.imagenColor.Name = "imagenColor";
-            this.imagenColor.Size = new System.Drawing.Size(650, 600);
-            this.imagenColor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imagenColor.TabIndex = 2;
-            this.imagenColor.TabStop = false;
-            // 
             // tabPage6
             // 
             this.tabPage6.AutoScroll = true;
@@ -925,7 +841,6 @@
             this.tabPage6.Controls.Add(this.imgSep3);
             this.tabPage6.Controls.Add(this.imgSep2);
             this.tabPage6.Controls.Add(this.imgSep1);
-            this.tabPage6.Controls.Add(this.imgSepOrigen);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(1333, 674);
@@ -935,7 +850,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(130, 410);
+            this.button3.Location = new System.Drawing.Point(127, 552);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 12;
@@ -1015,22 +930,12 @@
             this.imgSep1.TabIndex = 4;
             this.imgSep1.TabStop = false;
             // 
-            // imgSepOrigen
-            // 
-            this.imgSepOrigen.Location = new System.Drawing.Point(3, 33);
-            this.imgSepOrigen.Name = "imgSepOrigen";
-            this.imgSepOrigen.Size = new System.Drawing.Size(331, 317);
-            this.imgSepOrigen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSepOrigen.TabIndex = 3;
-            this.imgSepOrigen.TabStop = false;
-            // 
             // tabPage7
             // 
             this.tabPage7.Controls.Add(this.btnImgOcultar);
             this.tabPage7.Controls.Add(this.imgAOcultar);
             this.tabPage7.Controls.Add(this.ocultarMensaje);
             this.tabPage7.Controls.Add(this.imgMensajeEstaganografia);
-            this.tabPage7.Controls.Add(this.imgOrigenEstaganografia);
             this.tabPage7.Location = new System.Drawing.Point(4, 22);
             this.tabPage7.Name = "tabPage7";
             this.tabPage7.Size = new System.Drawing.Size(1333, 674);
@@ -1076,15 +981,6 @@
             this.imgMensajeEstaganografia.TabIndex = 5;
             this.imgMensajeEstaganografia.TabStop = false;
             // 
-            // imgOrigenEstaganografia
-            // 
-            this.imgOrigenEstaganografia.Location = new System.Drawing.Point(3, 50);
-            this.imgOrigenEstaganografia.Name = "imgOrigenEstaganografia";
-            this.imgOrigenEstaganografia.Size = new System.Drawing.Size(365, 338);
-            this.imgOrigenEstaganografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgOrigenEstaganografia.TabIndex = 4;
-            this.imgOrigenEstaganografia.TabStop = false;
-            // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel4);
@@ -1120,20 +1016,10 @@
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.imgAntesOpUn);
             this.panel1.Location = new System.Drawing.Point(7, 144);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(650, 524);
             this.panel1.TabIndex = 4;
-            // 
-            // imgAntesOpUn
-            // 
-            this.imgAntesOpUn.Location = new System.Drawing.Point(3, 3);
-            this.imgAntesOpUn.Name = "imgAntesOpUn";
-            this.imgAntesOpUn.Size = new System.Drawing.Size(100, 50);
-            this.imgAntesOpUn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgAntesOpUn.TabIndex = 0;
-            this.imgAntesOpUn.TabStop = false;
             // 
             // tableLayoutPanel1
             // 
@@ -1789,20 +1675,10 @@
             // panel5
             // 
             this.panel5.AutoScroll = true;
-            this.panel5.Controls.Add(this.imgUmbralBinarioAntes);
             this.panel5.Location = new System.Drawing.Point(6, 147);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(650, 524);
             this.panel5.TabIndex = 5;
-            // 
-            // imgUmbralBinarioAntes
-            // 
-            this.imgUmbralBinarioAntes.Location = new System.Drawing.Point(3, 3);
-            this.imgUmbralBinarioAntes.Name = "imgUmbralBinarioAntes";
-            this.imgUmbralBinarioAntes.Size = new System.Drawing.Size(100, 50);
-            this.imgUmbralBinarioAntes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgUmbralBinarioAntes.TabIndex = 0;
-            this.imgUmbralBinarioAntes.TabStop = false;
             // 
             // tabPage8
             // 
@@ -1837,20 +1713,10 @@
             // panel10
             // 
             this.panel10.AutoScroll = true;
-            this.panel10.Controls.Add(this.imgUmbralCorteAntes);
             this.panel10.Location = new System.Drawing.Point(6, 146);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(650, 524);
             this.panel10.TabIndex = 9;
-            // 
-            // imgUmbralCorteAntes
-            // 
-            this.imgUmbralCorteAntes.Location = new System.Drawing.Point(3, 3);
-            this.imgUmbralCorteAntes.Name = "imgUmbralCorteAntes";
-            this.imgUmbralCorteAntes.Size = new System.Drawing.Size(100, 50);
-            this.imgUmbralCorteAntes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgUmbralCorteAntes.TabIndex = 0;
-            this.imgUmbralCorteAntes.TabStop = false;
             // 
             // panel8
             // 
@@ -2187,20 +2053,10 @@
             // panel11
             // 
             this.panel11.AutoScroll = true;
-            this.panel11.Controls.Add(this.imagenUmbralesEscalonAntes);
             this.panel11.Location = new System.Drawing.Point(6, 146);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(650, 524);
             this.panel11.TabIndex = 10;
-            // 
-            // imagenUmbralesEscalonAntes
-            // 
-            this.imagenUmbralesEscalonAntes.Location = new System.Drawing.Point(3, 3);
-            this.imagenUmbralesEscalonAntes.Name = "imagenUmbralesEscalonAntes";
-            this.imagenUmbralesEscalonAntes.Size = new System.Drawing.Size(100, 50);
-            this.imagenUmbralesEscalonAntes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imagenUmbralesEscalonAntes.TabIndex = 0;
-            this.imagenUmbralesEscalonAntes.TabStop = false;
             // 
             // tabPage10
             // 
@@ -2716,20 +2572,10 @@
             // panel24
             // 
             this.panel24.AutoScroll = true;
-            this.panel24.Controls.Add(this.imagenComponentesConexas);
             this.panel24.Location = new System.Drawing.Point(6, 37);
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(694, 634);
             this.panel24.TabIndex = 15;
-            // 
-            // imagenComponentesConexas
-            // 
-            this.imagenComponentesConexas.Location = new System.Drawing.Point(3, 3);
-            this.imagenComponentesConexas.Name = "imagenComponentesConexas";
-            this.imagenComponentesConexas.Size = new System.Drawing.Size(100, 50);
-            this.imagenComponentesConexas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imagenComponentesConexas.TabIndex = 0;
-            this.imagenComponentesConexas.TabStop = false;
             // 
             // tabPage14
             // 
@@ -2772,20 +2618,10 @@
             // panel28
             // 
             this.panel28.AutoScroll = true;
-            this.panel28.Controls.Add(this.imagenHistograma);
             this.panel28.Location = new System.Drawing.Point(3, 37);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(734, 634);
             this.panel28.TabIndex = 14;
-            // 
-            // imagenHistograma
-            // 
-            this.imagenHistograma.Location = new System.Drawing.Point(3, 3);
-            this.imagenHistograma.Name = "imagenHistograma";
-            this.imagenHistograma.Size = new System.Drawing.Size(728, 628);
-            this.imagenHistograma.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagenHistograma.TabIndex = 0;
-            this.imagenHistograma.TabStop = false;
             // 
             // tabPage15
             // 
@@ -3048,7 +2884,6 @@
             // 
             // tabPage17
             // 
-            this.tabPage17.Controls.Add(this.imagenHistogramaEstiramientoOrigen);
             this.tabPage17.Location = new System.Drawing.Point(4, 22);
             this.tabPage17.Name = "tabPage17";
             this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
@@ -3056,15 +2891,6 @@
             this.tabPage17.TabIndex = 0;
             this.tabPage17.Text = "Imagen Original";
             this.tabPage17.UseVisualStyleBackColor = true;
-            // 
-            // imagenHistogramaEstiramientoOrigen
-            // 
-            this.imagenHistogramaEstiramientoOrigen.Location = new System.Drawing.Point(0, 0);
-            this.imagenHistogramaEstiramientoOrigen.Name = "imagenHistogramaEstiramientoOrigen";
-            this.imagenHistogramaEstiramientoOrigen.Size = new System.Drawing.Size(600, 645);
-            this.imagenHistogramaEstiramientoOrigen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagenHistogramaEstiramientoOrigen.TabIndex = 0;
-            this.imagenHistogramaEstiramientoOrigen.TabStop = false;
             // 
             // tabPage18
             // 
@@ -3169,7 +2995,6 @@
             // 
             // tabPage21
             // 
-            this.tabPage21.Controls.Add(this.imagenEqualizacionEntrada);
             this.tabPage21.Location = new System.Drawing.Point(4, 22);
             this.tabPage21.Name = "tabPage21";
             this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
@@ -3177,15 +3002,6 @@
             this.tabPage21.TabIndex = 0;
             this.tabPage21.Text = "Imagen Original";
             this.tabPage21.UseVisualStyleBackColor = true;
-            // 
-            // imagenEqualizacionEntrada
-            // 
-            this.imagenEqualizacionEntrada.Location = new System.Drawing.Point(0, 0);
-            this.imagenEqualizacionEntrada.Name = "imagenEqualizacionEntrada";
-            this.imagenEqualizacionEntrada.Size = new System.Drawing.Size(600, 645);
-            this.imagenEqualizacionEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imagenEqualizacionEntrada.TabIndex = 0;
-            this.imagenEqualizacionEntrada.TabStop = false;
             // 
             // tabPage22
             // 
@@ -3440,20 +3256,10 @@
             // panel27
             // 
             this.panel27.AutoScroll = true;
-            this.panel27.Controls.Add(this.imgRuidoAnt);
             this.panel27.Location = new System.Drawing.Point(4, 143);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(662, 522);
             this.panel27.TabIndex = 12;
-            // 
-            // imgRuidoAnt
-            // 
-            this.imgRuidoAnt.Location = new System.Drawing.Point(3, 3);
-            this.imgRuidoAnt.Name = "imgRuidoAnt";
-            this.imgRuidoAnt.Size = new System.Drawing.Size(100, 50);
-            this.imgRuidoAnt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgRuidoAnt.TabIndex = 0;
-            this.imgRuidoAnt.TabStop = false;
             // 
             // panel29
             // 
@@ -3710,20 +3516,10 @@
             // panel31
             // 
             this.panel31.AutoScroll = true;
-            this.panel31.Controls.Add(this.imgFiltrosEntrada);
             this.panel31.Location = new System.Drawing.Point(4, 143);
             this.panel31.Name = "panel31";
             this.panel31.Size = new System.Drawing.Size(662, 522);
             this.panel31.TabIndex = 12;
-            // 
-            // imgFiltrosEntrada
-            // 
-            this.imgFiltrosEntrada.Location = new System.Drawing.Point(3, 3);
-            this.imgFiltrosEntrada.Name = "imgFiltrosEntrada";
-            this.imgFiltrosEntrada.Size = new System.Drawing.Size(100, 50);
-            this.imgFiltrosEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgFiltrosEntrada.TabIndex = 0;
-            this.imgFiltrosEntrada.TabStop = false;
             // 
             // panel32
             // 
@@ -3844,20 +3640,10 @@
             // panel34
             // 
             this.panel34.AutoScroll = true;
-            this.panel34.Controls.Add(this.imgEntradaBordes_1);
             this.panel34.Location = new System.Drawing.Point(4, 3);
             this.panel34.Name = "panel34";
             this.panel34.Size = new System.Drawing.Size(332, 228);
             this.panel34.TabIndex = 12;
-            // 
-            // imgEntradaBordes_1
-            // 
-            this.imgEntradaBordes_1.Location = new System.Drawing.Point(3, 3);
-            this.imgEntradaBordes_1.Name = "imgEntradaBordes_1";
-            this.imgEntradaBordes_1.Size = new System.Drawing.Size(100, 50);
-            this.imgEntradaBordes_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgEntradaBordes_1.TabIndex = 0;
-            this.imgEntradaBordes_1.TabStop = false;
             // 
             // panel35
             // 
@@ -3978,20 +3764,10 @@
             // panel43
             // 
             this.panel43.AutoScroll = true;
-            this.panel43.Controls.Add(this.imgEntradaBordes_2);
             this.panel43.Location = new System.Drawing.Point(4, 3);
             this.panel43.Name = "panel43";
             this.panel43.Size = new System.Drawing.Size(332, 228);
             this.panel43.TabIndex = 12;
-            // 
-            // imgEntradaBordes_2
-            // 
-            this.imgEntradaBordes_2.Location = new System.Drawing.Point(3, 3);
-            this.imgEntradaBordes_2.Name = "imgEntradaBordes_2";
-            this.imgEntradaBordes_2.Size = new System.Drawing.Size(100, 50);
-            this.imgEntradaBordes_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgEntradaBordes_2.TabIndex = 0;
-            this.imgEntradaBordes_2.TabStop = false;
             // 
             // panel44
             // 
@@ -4112,20 +3888,10 @@
             // panel49
             // 
             this.panel49.AutoScroll = true;
-            this.panel49.Controls.Add(this.imgEntradaBordes_3);
             this.panel49.Location = new System.Drawing.Point(4, 3);
             this.panel49.Name = "panel49";
             this.panel49.Size = new System.Drawing.Size(332, 228);
             this.panel49.TabIndex = 12;
-            // 
-            // imgEntradaBordes_3
-            // 
-            this.imgEntradaBordes_3.Location = new System.Drawing.Point(3, 3);
-            this.imgEntradaBordes_3.Name = "imgEntradaBordes_3";
-            this.imgEntradaBordes_3.Size = new System.Drawing.Size(100, 50);
-            this.imgEntradaBordes_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgEntradaBordes_3.TabIndex = 0;
-            this.imgEntradaBordes_3.TabStop = false;
             // 
             // panel50
             // 
@@ -4178,20 +3944,10 @@
             // panel52
             // 
             this.panel52.AutoScroll = true;
-            this.panel52.Controls.Add(this.imgEntradaMagGrad);
             this.panel52.Location = new System.Drawing.Point(4, 45);
             this.panel52.Name = "panel52";
             this.panel52.Size = new System.Drawing.Size(662, 620);
             this.panel52.TabIndex = 12;
-            // 
-            // imgEntradaMagGrad
-            // 
-            this.imgEntradaMagGrad.Location = new System.Drawing.Point(3, 3);
-            this.imgEntradaMagGrad.Name = "imgEntradaMagGrad";
-            this.imgEntradaMagGrad.Size = new System.Drawing.Size(100, 50);
-            this.imgEntradaMagGrad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgEntradaMagGrad.TabIndex = 0;
-            this.imgEntradaMagGrad.TabStop = false;
             // 
             // panel53
             // 
@@ -4263,20 +4019,10 @@
             // panel58
             // 
             this.panel58.AutoScroll = true;
-            this.panel58.Controls.Add(this.imgPerfiladoEntrada);
             this.panel58.Location = new System.Drawing.Point(4, 3);
             this.panel58.Name = "panel58";
             this.panel58.Size = new System.Drawing.Size(332, 228);
             this.panel58.TabIndex = 12;
-            // 
-            // imgPerfiladoEntrada
-            // 
-            this.imgPerfiladoEntrada.Location = new System.Drawing.Point(3, 3);
-            this.imgPerfiladoEntrada.Name = "imgPerfiladoEntrada";
-            this.imgPerfiladoEntrada.Size = new System.Drawing.Size(100, 50);
-            this.imgPerfiladoEntrada.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.imgPerfiladoEntrada.TabIndex = 0;
-            this.imgPerfiladoEntrada.TabStop = false;
             // 
             // panel59
             // 
@@ -4295,6 +4041,18 @@
             this.imgPerfiladoSalida_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgPerfiladoSalida_1.TabIndex = 0;
             this.imgPerfiladoSalida_1.TabStop = false;
+            // 
+            // imagenOriginalZoom
+            // 
+            this.imagenOriginalZoom.Location = new System.Drawing.Point(21, 114);
+            this.imagenOriginalZoom.MinimumSize = new System.Drawing.Size(300, 300);
+            this.imagenOriginalZoom.Name = "imagenOriginalZoom";
+            this.imagenOriginalZoom.Size = new System.Drawing.Size(374, 393);
+            this.imagenOriginalZoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.imagenOriginalZoom.TabIndex = 4;
+            this.imagenOriginalZoom.TabStop = false;
+            this.imagenOriginalZoom.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenOriginalZoom.MouseMove += new System.Windows.Forms.MouseEventHandler(this.imagenOriginalZoom_MouseMove);
             // 
             // splitter1
             // 
@@ -4559,6 +4317,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1354, 733);
+            this.Controls.Add(this.imagenOriginalZoom);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -4570,9 +4329,6 @@
             this.menuStrip1.PerformLayout();
             this.tabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenAntesCorte)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespuesCorte)).EndInit();
@@ -4580,13 +4336,11 @@
             this.tabPage4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespuesCuant)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenAntesCuant)).EndInit();
             this.tabPage5.ResumeLayout(false);
             this.tabPage5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLuminosity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisAverage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLightness)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenColor)).EndInit();
             this.tabPage6.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgSep8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep7)).EndInit();
@@ -4596,18 +4350,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.imgSep3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgSep1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSepOrigen)).EndInit();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgAOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMensajeEstaganografia)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgOrigenEstaganografia)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgDespuesOpUn)).EndInit();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgAntesOpUn)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mult1)).EndInit();
@@ -4636,16 +4385,10 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUmbralBinarioDespues)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmbralBinarioAntes)).EndInit();
             this.tabPage8.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgUmbralCorteDespues)).EndInit();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgUmbralCorteAntes)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
@@ -4662,9 +4405,6 @@
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imagenUmbralesEscalonDespues)).EndInit();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenUmbralesEscalonAntes)).EndInit();
             this.tabPage10.ResumeLayout(false);
             this.tabPage10.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.txtPesoSuma2)).EndInit();
@@ -4705,13 +4445,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenBoolenaResultado)).EndInit();
             this.tabPage13.ResumeLayout(false);
             this.tabPage13.PerformLayout();
-            this.panel24.ResumeLayout(false);
-            this.panel24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imagenComponentesConexas)).EndInit();
             this.tabPage14.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imagenHistograma)).EndInit();
             this.tabPage15.ResumeLayout(false);
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
@@ -4726,8 +4461,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenHistogramaEstiramientoSalida)).EndInit();
             this.tabPage20.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
-            this.tabPage17.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imagenHistogramaEstiramientoOrigen)).EndInit();
             this.tabPage18.ResumeLayout(false);
             this.tabPage16.ResumeLayout(false);
             this.tabControl5.ResumeLayout(false);
@@ -4735,8 +4468,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenEqualizacionSalida)).EndInit();
             this.tabPage24.ResumeLayout(false);
             this.tabControl4.ResumeLayout(false);
-            this.tabPage21.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imagenEqualizacionEntrada)).EndInit();
             this.tabPage22.ResumeLayout(false);
             this.tabPage25.ResumeLayout(false);
             this.panel26.ResumeLayout(false);
@@ -4745,9 +4476,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.RuidoGauss)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RuidoNormal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.RuidoSyP)).EndInit();
-            this.panel27.ResumeLayout(false);
-            this.panel27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgRuidoAnt)).EndInit();
             this.panel29.ResumeLayout(false);
             this.panel29.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgRuidoDes)).EndInit();
@@ -4759,9 +4487,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.tamano_mascara)).EndInit();
             this.GBfiltros.ResumeLayout(false);
             this.GBfiltros.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgFiltrosEntrada)).EndInit();
             this.panel32.ResumeLayout(false);
             this.panel32.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgFiltrosSalida)).EndInit();
@@ -4777,9 +4502,6 @@
             this.panel36.ResumeLayout(false);
             this.panel36.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBorde_1_3)).EndInit();
-            this.panel34.ResumeLayout(false);
-            this.panel34.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_1)).EndInit();
             this.panel35.ResumeLayout(false);
             this.panel35.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBorde_1_1)).EndInit();
@@ -4795,9 +4517,6 @@
             this.panel42.ResumeLayout(false);
             this.panel42.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_2_3)).EndInit();
-            this.panel43.ResumeLayout(false);
-            this.panel43.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_2)).EndInit();
             this.panel44.ResumeLayout(false);
             this.panel44.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_2_1)).EndInit();
@@ -4813,17 +4532,11 @@
             this.panel48.ResumeLayout(false);
             this.panel48.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_3_3)).EndInit();
-            this.panel49.ResumeLayout(false);
-            this.panel49.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaBordes_3)).EndInit();
             this.panel50.ResumeLayout(false);
             this.panel50.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaBordes_3_1)).EndInit();
             this.tabPage30.ResumeLayout(false);
             this.panel51.ResumeLayout(false);
-            this.panel52.ResumeLayout(false);
-            this.panel52.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgEntradaMagGrad)).EndInit();
             this.panel53.ResumeLayout(false);
             this.panel53.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgSalidaMagGrad)).EndInit();
@@ -4832,12 +4545,10 @@
             this.panel56.ResumeLayout(false);
             this.panel56.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoSalida_2)).EndInit();
-            this.panel58.ResumeLayout(false);
-            this.panel58.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoEntrada)).EndInit();
             this.panel59.ResumeLayout(false);
             this.panel59.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgPerfiladoSalida_1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imagenOriginalZoom)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenAntes)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenDespues)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gananciaAzul)).EndInit();
@@ -4864,7 +4575,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.Button btCortar;
         private System.Windows.Forms.PictureBox imagenDespuesCorte;
-        private System.Windows.Forms.PictureBox imagenAntesCorte;
         private System.Windows.Forms.Button bGenerarImagen;
         private System.Windows.Forms.Splitter splitter1;
         private System.Windows.Forms.PictureBox imagenAntes;
@@ -4893,7 +4603,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.PictureBox imagenDespuesCuant;
-        private System.Windows.Forms.PictureBox imagenAntesCuant;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Label label12;
@@ -4902,7 +4611,6 @@
         private System.Windows.Forms.PictureBox imagenGrisLuminosity;
         private System.Windows.Forms.PictureBox imagenGrisAverage;
         private System.Windows.Forms.PictureBox imagenGrisLightness;
-        private System.Windows.Forms.PictureBox imagenColor;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button3;
@@ -4914,11 +4622,9 @@
         private System.Windows.Forms.PictureBox imgSep3;
         private System.Windows.Forms.PictureBox imgSep2;
         private System.Windows.Forms.PictureBox imgSep1;
-        private System.Windows.Forms.PictureBox imgSepOrigen;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button ocultarMensaje;
         private System.Windows.Forms.PictureBox imgMensajeEstaganografia;
-        private System.Windows.Forms.PictureBox imgOrigenEstaganografia;
         private System.Windows.Forms.SaveFileDialog saveImageDialog;
         private System.Windows.Forms.ToolStripMenuItem guardarImagenToolStripMenuItem;
         private System.Windows.Forms.Button btnImgOcultar;
@@ -4943,7 +4649,6 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.PictureBox imgDespuesOpUn;
-        private System.Windows.Forms.PictureBox imgAntesOpUn;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.NumericUpDown gama1;
         private System.Windows.Forms.NumericUpDown gama2;
@@ -4967,12 +4672,10 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox imgUmbralBinarioDespues;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.PictureBox imgUmbralBinarioAntes;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox imgUmbralCorteDespues;
         private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.PictureBox imgUmbralCorteAntes;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label27;
@@ -5009,7 +4712,6 @@
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox imagenUmbralesEscalonDespues;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.PictureBox imagenUmbralesEscalonAntes;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Button btRestarImagenes;
         private System.Windows.Forms.Button btSumarImagenes;
@@ -5061,7 +4763,6 @@
         private System.Windows.Forms.TabPage tabPage14;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.PictureBox imagenHistograma;
         private System.Windows.Forms.Button btHistograma;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabPage tabPage16;
@@ -5089,7 +4790,6 @@
         private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.PictureBox imagenHistogramaEstiramientoSalida;
-        private System.Windows.Forms.PictureBox imagenHistogramaEstiramientoOrigen;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.TabControl tabControl5;
         private System.Windows.Forms.TabPage tabPage23;
@@ -5098,12 +4798,10 @@
         private ControlHistogramas controlHistogramasEqualizacion2;
         private System.Windows.Forms.TabControl tabControl4;
         private System.Windows.Forms.TabPage tabPage21;
-        private System.Windows.Forms.PictureBox imagenEqualizacionEntrada;
         private System.Windows.Forms.TabPage tabPage22;
         private ControlHistogramas controlHistogramasEqualizacion1;
         private System.Windows.Forms.Button btComponentesConexas;
         private System.Windows.Forms.Panel panel24;
-        private System.Windows.Forms.PictureBox imagenComponentesConexas;
         private System.Windows.Forms.TextBox txtConexas;
         private System.Windows.Forms.TabPage tabPage25;
         private System.Windows.Forms.Panel panel26;
@@ -5121,7 +4819,6 @@
         private System.Windows.Forms.TrackBar RuidoNormal;
         private System.Windows.Forms.TrackBar RuidoSyP;
         private System.Windows.Forms.Panel panel27;
-        private System.Windows.Forms.PictureBox imgRuidoAnt;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.PictureBox imgRuidoDes;
         private System.Windows.Forms.TextBox centroRuidoG;
@@ -5136,7 +4833,6 @@
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Button aplicaFiltro;
         private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.PictureBox imgFiltrosEntrada;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.PictureBox imgFiltrosSalida;
         private System.Windows.Forms.GroupBox GBfiltros;
@@ -5157,7 +4853,6 @@
         private System.Windows.Forms.Panel panel33;
         private System.Windows.Forms.Button Borde_1;
         private System.Windows.Forms.Panel panel34;
-        private System.Windows.Forms.PictureBox imgEntradaBordes_1;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.PictureBox imgSalidaBorde_1_1;
         private System.Windows.Forms.Panel panel38;
@@ -5178,7 +4873,6 @@
         private System.Windows.Forms.PictureBox imgSalidaBordes_2_3;
         private System.Windows.Forms.Button Bordes_2;
         private System.Windows.Forms.Panel panel43;
-        private System.Windows.Forms.PictureBox imgEntradaBordes_2;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.PictureBox imgSalidaBordes_2_1;
         private System.Windows.Forms.TabPage tabPage29;
@@ -5192,14 +4886,12 @@
         private System.Windows.Forms.PictureBox imgSalidaBordes_3_3;
         private System.Windows.Forms.Button Bordes_3;
         private System.Windows.Forms.Panel panel49;
-        private System.Windows.Forms.PictureBox imgEntradaBordes_3;
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.PictureBox imgSalidaBordes_3_1;
         private System.Windows.Forms.TabPage tabPage30;
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.Button MagGrad;
         private System.Windows.Forms.Panel panel52;
-        private System.Windows.Forms.PictureBox imgEntradaMagGrad;
         private System.Windows.Forms.Panel panel53;
         private System.Windows.Forms.PictureBox imgSalidaMagGrad;
         private System.Windows.Forms.TabPage tabPage31;
@@ -5208,9 +4900,9 @@
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_2;
         private System.Windows.Forms.Button Perfilado;
         private System.Windows.Forms.Panel panel58;
-        private System.Windows.Forms.PictureBox imgPerfiladoEntrada;
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_1;
+        private System.Windows.Forms.PictureBox imagenOriginalZoom;
     }
 }
 

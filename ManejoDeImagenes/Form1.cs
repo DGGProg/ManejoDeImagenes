@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
@@ -30,19 +31,15 @@ namespace ManejoDeImagenes
 
         private void DialogoAbrirImagen_FileOk(object sender, CancelEventArgs e)
         {
-            imagenAntesCorte.ImageLocation = DialogoAbrirImagen.FileName;
+            imagenOriginalZoom.ImageLocation = DialogoAbrirImagen.FileName;
+            imagenOriginalZoom.SizeMode = PictureBoxSizeMode.Zoom;
+          
+            ///imagenes nuevas
             imagenDespuesCorte.Image = null;
-            imagenAntesCuant.ImageLocation = DialogoAbrirImagen.FileName;
             imagenDespuesCuant.Image = null;
-            imagenColor.ImageLocation = DialogoAbrirImagen.FileName;
             imagenGrisLightness.Image = null;
             imagenGrisAverage.Image = null;
             imagenGrisLuminosity.Image = null;
-            imagenColor.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisLightness.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisAverage.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisLuminosity.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSepOrigen.ImageLocation = DialogoAbrirImagen.FileName;
             imgSep1.Image = null;
             imgSep2.Image = null;
             imgSep3.Image = null;
@@ -51,33 +48,31 @@ namespace ManejoDeImagenes
             imgSep6.Image = null;
             imgSep7.Image = null;
             imgSep8.Image = null;
-            imgOrigenEstaganografia.ImageLocation = DialogoAbrirImagen.FileName;
             imgMensajeEstaganografia.Image = null;
-            imgAntesOpUn.ImageLocation = DialogoAbrirImagen.FileName;
-            imgUmbralBinarioAntes.ImageLocation = DialogoAbrirImagen.FileName;
-            imgUmbralCorteAntes.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenUmbralesEscalonAntes.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenSumaResta1.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenMultiDiv1.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenBooleana1.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenComponentesConexas.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenHistograma.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenHistogramaEstiramientoOrigen.ImageLocation = DialogoAbrirImagen.FileName;
-            imagenEqualizacionEntrada.ImageLocation = DialogoAbrirImagen.FileName;
-            imgRuidoAnt.ImageLocation = DialogoAbrirImagen.FileName;
-            imgFiltrosEntrada.ImageLocation = DialogoAbrirImagen.FileName;
-            imgEntradaBordes_1.ImageLocation = DialogoAbrirImagen.FileName;
-            imgEntradaBordes_2.ImageLocation = DialogoAbrirImagen.FileName;
-            imgEntradaBordes_3.ImageLocation = DialogoAbrirImagen.FileName;
-            imgEntradaMagGrad.ImageLocation = DialogoAbrirImagen.FileName;
-            imgPerfiladoEntrada.ImageLocation = DialogoAbrirImagen.FileName;
+            imgDespuesOpUn.Image = null;
+
+            imagenDespuesCorte.SizeMode = PictureBoxSizeMode.Zoom;
+            imagenDespuesCuant.SizeMode = PictureBoxSizeMode.Zoom;
+            imagenGrisLightness.SizeMode = PictureBoxSizeMode.Zoom;
+            imagenGrisAverage.SizeMode = PictureBoxSizeMode.Zoom;
+            imagenGrisLuminosity.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep1.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep2.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep3.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep4.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep5.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep6.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep7.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSep8.SizeMode = PictureBoxSizeMode.Zoom;
+            imgMensajeEstaganografia.SizeMode = PictureBoxSizeMode.Zoom;
+            imgDespuesOpUn.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         private void bGenerarImagen_Click(object sender, EventArgs e)
         {
-            if (imgAntesOpUn.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgDespuesOpUn.Image = OperacionesUnarias.aplicaOperaciones(imgAntesOpUn.Image, (int)suma1.Value, (int)suma2.Value, (int)suma3.Value, mult1.Value, mult2.Value, mult3.Value, div1.Value, div2.Value, div3.Value, gama1.Value, gama2.Value, gama3.Value);
+                imgDespuesOpUn.Image = OperacionesUnarias.aplicaOperaciones(imagenOriginalZoom.Image, (int)suma1.Value, (int)suma2.Value, (int)suma3.Value, mult1.Value, mult2.Value, mult3.Value, div1.Value, div2.Value, div3.Value, gama1.Value, gama2.Value, gama3.Value);
             }
         }
 
@@ -85,64 +80,71 @@ namespace ManejoDeImagenes
         {
             if (imagenDespuesCorte.Image != null)
             {
-                imagenAntesCorte.Image = imagenDespuesCorte.Image;
+                imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
             }
-            if (imagenAntesCorte.Image != null)
+            else
             {
-                imagenDespuesCorte.Image = Corte.cortarImagen(imagenAntesCorte.Image);
+                if (imagenOriginalZoom.Image != null)
+                {
+                    imagenDespuesCorte.Image = Corte.cortarImagen(imagenOriginalZoom.Image);
+                }
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             if (imagenDespuesCorte.Image != null)
             {
-                imagenAntesCorte.Image = imagenDespuesCorte.Image;
+                imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
             }
-            if (imagenAntesCorte.Image != null)
+            else
             {
-                imagenDespuesCorte.Image = Corte.agrandarImagen(imagenAntesCorte.Image);
+                if (imagenOriginalZoom.Image != null)
+                {
+                    imagenDespuesCorte.Image = Corte.agrandarImagen(imagenOriginalZoom.Image);
+                }
             }
         }
 
         private void numericUpDown1_ValueChanged(object sender, EventArgs e)
         {
-            if (imagenAntesCuant.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imagenDespuesCuant.Image = Cuantificacion.disminuirBytes(imagenAntesCuant.Image,(int)numericUpDown1.Value);
+                imagenDespuesCuant.Image = Cuantificacion.disminuirBytes(imagenOriginalZoom.Image,(int)numericUpDown1.Value);
             }
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-            if (imagenColor.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imagenGrisLightness.Image = Cuantificacion.escalaDeGrisesLightness(imagenColor.Image);
-                imagenGrisAverage.Image = Cuantificacion.escalaDeGrisesAverage(imagenColor.Image);
-                imagenGrisLuminosity.Image = Cuantificacion.escalaDeGrisesLuminosity(imagenColor.Image);
+                imagenGrisLightness.Image = Cuantificacion.escalaDeGrisesLightness(imagenOriginalZoom.Image);
+                imagenGrisAverage.Image = Cuantificacion.escalaDeGrisesAverage(imagenOriginalZoom.Image);
+                imagenGrisLuminosity.Image = Cuantificacion.escalaDeGrisesLuminosity(imagenOriginalZoom.Image);
             }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (imgSepOrigen.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgSep1.Image = Separar.bit_a_separar(imgSepOrigen.Image, 1);
-                imgSep2.Image = Separar.bit_a_separar(imgSepOrigen.Image, 2);
-                imgSep3.Image = Separar.bit_a_separar(imgSepOrigen.Image, 3);
-                imgSep4.Image = Separar.bit_a_separar(imgSepOrigen.Image, 4);
-                imgSep5.Image = Separar.bit_a_separar(imgSepOrigen.Image, 5);
-                imgSep6.Image = Separar.bit_a_separar(imgSepOrigen.Image, 6);
-                imgSep7.Image = Separar.bit_a_separar(imgSepOrigen.Image, 7);
-                imgSep8.Image = Separar.bit_a_separar(imgSepOrigen.Image, 8);
+                imgSep1.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 1);
+                imgSep2.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 2);
+                imgSep3.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 3);
+                imgSep4.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 4);
+                imgSep5.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 5);
+                imgSep6.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 6);
+                imgSep7.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 7);
+                imgSep8.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 8);
             }
         }
 
         private void ocultarMensaje_Click(object sender, EventArgs e)
         {
-            if( imgOrigenEstaganografia.Image != null)
+            if(imagenOriginalZoom.Image != null)
             {
-                imgMensajeEstaganografia.Image = Esteganografia.encriptar(imgOrigenEstaganografia.Image, imgAOcultar.Image);
+                imgMensajeEstaganografia.Image = Esteganografia.encriptar(imagenOriginalZoom.Image, imgAOcultar.Image);
             }
         }
 
@@ -248,17 +250,17 @@ namespace ManejoDeImagenes
 
         private void AplicarUmbralBinario_Click(object sender, EventArgs e)
         {
-            if (imgUmbralBinarioAntes.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgUmbralBinarioDespues.Image = OperacionesUnarias.umbralBinario(imgUmbralBinarioAntes.Image, umbralBinarioInferiorC1.Value, umbralBinarioInferiorC2.Value, umbralBinarioInferiorC3.Value, umbralBinarioSuperiorC1.Value, umbralBinarioSuperiorC2.Value, umbralBinarioSuperiorC3.Value, UmbralBinarioInverso.Checked);
+                imgUmbralBinarioDespues.Image = OperacionesUnarias.umbralBinario(imagenOriginalZoom.Image, umbralBinarioInferiorC1.Value, umbralBinarioInferiorC2.Value, umbralBinarioInferiorC3.Value, umbralBinarioSuperiorC1.Value, umbralBinarioSuperiorC2.Value, umbralBinarioSuperiorC3.Value, UmbralBinarioInverso.Checked);
             }
         }
 
         private void AplicarUmbralCorte_Click(object sender, EventArgs e)
         {
-            if (imgUmbralCorteAntes.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgUmbralCorteDespues.Image = OperacionesUnarias.umbralCorte(imgUmbralCorteAntes.Image, umbralCorteInferiorC1.Value, umbralCorteInferiorC2.Value, umbralCorteInferiorC3.Value, umbralCorteSuperiorC1.Value, umbralCorteSuperiorC2.Value, umbralCorteSuperiorC3.Value, umbralCorteInverso.Checked, umbralCorteExtencion.Checked);
+                imgUmbralCorteDespues.Image = OperacionesUnarias.umbralCorte(imagenOriginalZoom.Image, umbralCorteInferiorC1.Value, umbralCorteInferiorC2.Value, umbralCorteInferiorC3.Value, umbralCorteSuperiorC1.Value, umbralCorteSuperiorC2.Value, umbralCorteSuperiorC3.Value, umbralCorteInverso.Checked, umbralCorteExtencion.Checked);
             }
         }
 
@@ -379,9 +381,9 @@ namespace ManejoDeImagenes
                     TextBox valor = (TextBox)panelUmbralEscalon.Controls[nombre];
                     umbrales[i] = int.Parse(valor.Text);
                 }
-                if (imagenUmbralesEscalonAntes.Image != null)
+                if (imagenOriginalZoom.Image != null)
                 {
-                    imagenUmbralesEscalonDespues.Image = OperacionesUnarias.umbralEscalon(imagenUmbralesEscalonAntes.Image, umbrales);
+                    imagenUmbralesEscalonDespues.Image = OperacionesUnarias.umbralEscalon(imagenOriginalZoom.Image, umbrales);
                 }
             }
             catch (Exception)
@@ -418,18 +420,18 @@ namespace ManejoDeImagenes
 
         private void btHistograma_Click(object sender, EventArgs e)
         {
-            if (imagenHistograma.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                controlHistogramas1.Canales = Histogramas.obten_histograma(imagenHistograma.Image);
+                controlHistogramas1.Canales = Histogramas.obten_histograma(imagenOriginalZoom.Image);
                 controlHistogramas1.GeneraHistograma();
             }
         }
 
         private void btEstirar_Click(object sender, EventArgs e)
         {
-            if (imagenHistogramaEstiramientoOrigen.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imagenHistogramaEstiramientoSalida.Image = Histogramas.estiramiento(imagenHistogramaEstiramientoOrigen.Image, (int)txtLimiteInferiorEstirar_1.Value, (int)txtLimiteInferiorEstirar_2.Value, (int)txtLimiteInferiorEstirar_3.Value, (int)txtLimiteSuperiorEstirar_1.Value, (int)txtLimiteSuperiorEstirar_2.Value, (int)txtLimiteSuperiorEstirar_3.Value);
+                imagenHistogramaEstiramientoSalida.Image = Histogramas.estiramiento(imagenOriginalZoom.Image, (int)txtLimiteInferiorEstirar_1.Value, (int)txtLimiteInferiorEstirar_2.Value, (int)txtLimiteInferiorEstirar_3.Value, (int)txtLimiteSuperiorEstirar_1.Value, (int)txtLimiteSuperiorEstirar_2.Value, (int)txtLimiteSuperiorEstirar_3.Value);
                 controlHistogramas_estiramiento_salida.Canales = Histogramas.obten_histograma(imagenHistogramaEstiramientoSalida.Image);
                 controlHistogramas_estiramiento_salida.GeneraHistograma();
             }
@@ -439,9 +441,9 @@ namespace ManejoDeImagenes
         {
             if (tabControl2.SelectedIndex == 1)
             {
-                if (imagenHistogramaEstiramientoOrigen.Image != null)
+                if (imagenOriginalZoom.Image != null)
                 {
-                    controlHistogramas_estiramiento_entrada.Canales = Histogramas.obten_histograma(imagenHistogramaEstiramientoOrigen.Image);
+                    controlHistogramas_estiramiento_entrada.Canales = Histogramas.obten_histograma(imagenOriginalZoom.Image);
                     controlHistogramas_estiramiento_entrada.GeneraHistograma();
                 }
             }
@@ -449,9 +451,9 @@ namespace ManejoDeImagenes
 
         private void button13_Click(object sender, EventArgs e)
         {
-            if (imagenEqualizacionEntrada.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imagenEqualizacionSalida.Image = Histogramas.aplica_equalizacion(imagenEqualizacionEntrada.Image, Histogramas.obten_equalizacion(Histogramas.obten_histograma(imagenEqualizacionEntrada.Image), imagenEqualizacionEntrada.Image.Width * imagenEqualizacionEntrada.Image.Height));
+                imagenEqualizacionSalida.Image = Histogramas.aplica_equalizacion(imagenOriginalZoom.Image, Histogramas.obten_equalizacion(Histogramas.obten_histograma(imagenOriginalZoom.Image), imagenOriginalZoom.Image.Width * imagenOriginalZoom.Image.Height));
                 controlHistogramasEqualizacion2.Canales = Histogramas.obten_histograma(imagenEqualizacionSalida.Image);
                 controlHistogramasEqualizacion2.GeneraHistograma();
             }
@@ -461,9 +463,9 @@ namespace ManejoDeImagenes
         {
             if (tabControl4.SelectedIndex == 1)
             {
-                if (imagenEqualizacionEntrada.Image != null)
+                if (imagenOriginalZoom.Image != null)
                 {
-                    controlHistogramasEqualizacion1.Canales = Histogramas.obten_histograma(imagenEqualizacionEntrada.Image);
+                    controlHistogramasEqualizacion1.Canales = Histogramas.obten_histograma(imagenOriginalZoom.Image);
                     controlHistogramasEqualizacion1.GeneraHistograma();
                 }
             }
@@ -471,9 +473,9 @@ namespace ManejoDeImagenes
 
         private void btComponentesConexas_Click(object sender, EventArgs e)
         {
-            if (imagenComponentesConexas.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                int[,] componentes = Vecindad.obtenComponentesConexas(imagenComponentesConexas.Image);
+                int[,] componentes = Vecindad.obtenComponentesConexas(imagenOriginalZoom.Image);
                 StringBuilder texto = new StringBuilder();
                 List<int> campos = new List<int>();
                 SortedList<int, int> campos_2 = new SortedList<int, int>();
@@ -528,17 +530,17 @@ namespace ManejoDeImagenes
 
         private void AplicaRuido_Click(object sender, EventArgs e)
         {
-            if (imgRuidoAnt.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgRuidoDes.Image = Ruido.aplicarRuido(imgRuidoAnt.Image, int.Parse(centroRuidoG.Text), decimal.Parse(sigmaRuidoG.Text), (int)RuidoGauss.Value, int.Parse(infRuidoU.Text), int.Parse(supRuidoU.Text), (int)RuidoNormal.Value, int.Parse(infRuidoSyP.Text), int.Parse(supRuidoSyP.Text), (int)RuidoSyP.Value);
+                imgRuidoDes.Image = Ruido.aplicarRuido(imagenOriginalZoom.Image, int.Parse(centroRuidoG.Text), decimal.Parse(sigmaRuidoG.Text), (int)RuidoGauss.Value, int.Parse(infRuidoU.Text), int.Parse(supRuidoU.Text), (int)RuidoNormal.Value, int.Parse(infRuidoSyP.Text), int.Parse(supRuidoSyP.Text), (int)RuidoSyP.Value);
             }
         }
 
         private void aplicaFiltro_Click(object sender, EventArgs e)
         {
-            if (imgFiltrosEntrada.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgFiltrosSalida.Image = Filtros.aplicarFiltro(imgFiltrosEntrada.Image, filtro_seleccionado(GBfiltros), (int)tamano_mascara.Value, (double)sigma_filtro.Value, (int)T_filtro.Value);
+                imgFiltrosSalida.Image = Filtros.aplicarFiltro(imagenOriginalZoom.Image, filtro_seleccionado(GBfiltros), (int)tamano_mascara.Value, (double)sigma_filtro.Value, (int)T_filtro.Value);
             }
         }
 
@@ -558,51 +560,76 @@ namespace ManejoDeImagenes
 
         private void Borde_1_Click(object sender, EventArgs e)
         {
-            if (imgEntradaBordes_1.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgSalidaBorde_1_1.Image = Bordes.aplicarBorde_Derivada_X(imgEntradaBordes_1.Image, chkBorde_1.Checked);
-                imgSalidaBorde_1_2.Image = Bordes.aplicarBorde_Derivada_Y(imgEntradaBordes_1.Image, chkBorde_1.Checked);
-                imgSalidaBorde_1_3.Image = Bordes.aplicarBorde_Diagonal_1(imgEntradaBordes_1.Image, chkBorde_1.Checked);
-                imgSalidaBorde_1_4.Image = Bordes.aplicarBorde_Diagonal_2(imgEntradaBordes_1.Image, chkBorde_1.Checked);
+                imgSalidaBorde_1_1.Image = Bordes.aplicarBorde_Derivada_X(imagenOriginalZoom.Image, chkBorde_1.Checked);
+                imgSalidaBorde_1_2.Image = Bordes.aplicarBorde_Derivada_Y(imagenOriginalZoom.Image, chkBorde_1.Checked);
+                imgSalidaBorde_1_3.Image = Bordes.aplicarBorde_Diagonal_1(imagenOriginalZoom.Image, chkBorde_1.Checked);
+                imgSalidaBorde_1_4.Image = Bordes.aplicarBorde_Diagonal_2(imagenOriginalZoom.Image, chkBorde_1.Checked);
             }
         }
 
         private void Bordes_2_Click(object sender, EventArgs e)
         {
-            if (imgEntradaBordes_2.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgSalidaBordes_2_1.Image = Bordes.aplicarBorde_Prewitt_X(imgEntradaBordes_2.Image, chkBorde_2.Checked);
-                imgSalidaBordes_2_2.Image = Bordes.aplicarBorde_Prewitt_Y(imgEntradaBordes_2.Image, chkBorde_2.Checked);
-                imgSalidaBordes_2_3.Image = Bordes.aplicarBorde_Scharr_X(imgEntradaBordes_2.Image, chkBorde_2.Checked);
-                imgSalidaBordes_2_4.Image = Bordes.aplicarBorde_Scharr_Y(imgEntradaBordes_2.Image, chkBorde_2.Checked);
+                imgSalidaBordes_2_1.Image = Bordes.aplicarBorde_Prewitt_X(imagenOriginalZoom.Image, chkBorde_2.Checked);
+                imgSalidaBordes_2_2.Image = Bordes.aplicarBorde_Prewitt_Y(imagenOriginalZoom.Image, chkBorde_2.Checked);
+                imgSalidaBordes_2_3.Image = Bordes.aplicarBorde_Scharr_X(imagenOriginalZoom.Image, chkBorde_2.Checked);
+                imgSalidaBordes_2_4.Image = Bordes.aplicarBorde_Scharr_Y(imagenOriginalZoom.Image, chkBorde_2.Checked);
             }
         }
 
         private void Bordes_3_Click(object sender, EventArgs e)
         {
-            if (imgEntradaBordes_3.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgSalidaBordes_3_1.Image = Bordes.aplicarBorde_Sobel_X(imgEntradaBordes_3.Image, chkBordes_3.Checked);
-                imgSalidaBordes_3_2.Image = Bordes.aplicarBorde_Sobel_Y(imgEntradaBordes_3.Image, chkBordes_3.Checked);
-                imgSalidaBordes_3_3.Image = Bordes.aplicarBorde_Laplace_1(imgEntradaBordes_3.Image, chkBordes_3.Checked);
-                imgSalidaBordes_3_4.Image = Bordes.aplicarBorde_Laplace_2(imgEntradaBordes_3.Image, chkBordes_3.Checked);
+                imgSalidaBordes_3_1.Image = Bordes.aplicarBorde_Sobel_X(imagenOriginalZoom.Image, chkBordes_3.Checked);
+                imgSalidaBordes_3_2.Image = Bordes.aplicarBorde_Sobel_Y(imagenOriginalZoom.Image, chkBordes_3.Checked);
+                imgSalidaBordes_3_3.Image = Bordes.aplicarBorde_Laplace_1(imagenOriginalZoom.Image, chkBordes_3.Checked);
+                imgSalidaBordes_3_4.Image = Bordes.aplicarBorde_Laplace_2(imagenOriginalZoom.Image, chkBordes_3.Checked);
             }
         }
 
         private void MagGrad_Click(object sender, EventArgs e)
         {
-            if (imgEntradaMagGrad.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgSalidaMagGrad.Image = Bordes.aplicarMagGrad(imgEntradaMagGrad.Image);
+                imgSalidaMagGrad.Image = Bordes.aplicarMagGrad(imagenOriginalZoom.Image);
             }
         }
 
         private void Perfilado_Click(object sender, EventArgs e)
         {
-            if (imgPerfiladoEntrada.Image != null)
+            if (imagenOriginalZoom.Image != null)
             {
-                imgPerfiladoSalida_1.Image = Bordes.aplicarPerfilado_Laplace_1(imgPerfiladoEntrada.Image,1,false);
-                imgPerfiladoSalida_2.Image = Bordes.aplicarPerfilado_Laplace_2(imgPerfiladoEntrada.Image,false);
+                imgPerfiladoSalida_1.Image = Bordes.aplicarPerfilado_Laplace_1(imagenOriginalZoom.Image,1,false);
+                imgPerfiladoSalida_2.Image = Bordes.aplicarPerfilado_Laplace_2(imagenOriginalZoom.Image,false);
+            }
+        }
+
+        private void imagenOriginalZoom_DoubleClick(object sender, EventArgs e)
+        {
+            Form imagen = new Form();
+            PictureBox imagenOrigen = new PictureBox();
+            imagenOrigen.Image = imagenOriginalZoom.Image;
+            imagen.Controls.Add(imagenOrigen);
+
+            imagenOrigen.Left = 0;
+            imagenOrigen.Top = 0;
+            imagenOrigen.Width = imagenOrigen.Image.Width;
+            imagenOrigen.Height = imagenOrigen.Image.Height;
+
+            imagen.AutoScroll = true;
+            imagen.ShowDialog();
+        }
+
+        private void imagenOriginalZoom_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                var pictureBox = (PictureBox)sender;
+                pictureBox.Location = new Point(pictureBox.Left + e.X, pictureBox.Top + e.Y);
             }
         }
     }
