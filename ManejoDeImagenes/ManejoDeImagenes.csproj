@@ -59,18 +59,9 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CameraSensorUtilities">
-      <HintPath>C:\Users\Pasa\Microsoft Robotics Dev Studio 4\bin\CameraSensorUtilities.dll</HintPath>
-    </Reference>
-    <Reference Include="RoboticsCommon">
-      <HintPath>C:\Users\Pasa\Microsoft Robotics Dev Studio 4\bin\RoboticsCommon.dll</HintPath>
-    </Reference>
-    <Reference Include="RoboticsCommon.proxy">
-      <HintPath>C:\Users\Pasa\Microsoft Robotics Dev Studio 4\bin\RoboticsCommon.proxy.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
@@ -110,7 +101,6 @@
     <Compile Include="Ruido.cs" />
     <Compile Include="Separar.cs" />
     <Compile Include="Vecindad.cs" />
-    <Compile Include="webcam.cs" />
     <EmbeddedResource Include="ControlHistogramas.resx">
       <DependentUpon>ControlHistogramas.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,7 +117,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="ManejoDeImagenes_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

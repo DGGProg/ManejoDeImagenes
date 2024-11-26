@@ -2852,6 +2852,14 @@
             this.imagenHistogramaEstiramientoSalida.TabIndex = 0;
             this.imagenHistogramaEstiramientoSalida.TabStop = false;
             // 
+            // controlHistogramas_estiramiento_salida
+            // 
+            this.controlHistogramas_estiramiento_salida.Canales = null;
+            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
+            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
+            // 
             // tabPage20
             // 
             this.tabPage20.Controls.Add(this.controlHistogramas_estiramiento_salida);
@@ -2862,14 +2870,6 @@
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "Histograma";
             this.tabPage20.UseVisualStyleBackColor = true;
-            // 
-            // controlHistogramas_estiramiento_salida
-            // 
-            this.controlHistogramas_estiramiento_salida.Canales = null;
-            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
-            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
             // 
             // tabControl2
             // 
