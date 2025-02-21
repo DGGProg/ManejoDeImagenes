@@ -632,5 +632,6 @@ namespace ManejoDeImagenes
                 pictureBox.Location = new Point(pictureBox.Left + e.X, pictureBox.Top + e.Y);
             }
         }
+
     }
 }
