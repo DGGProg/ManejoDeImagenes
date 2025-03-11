@@ -65,7 +65,6 @@ namespace ManejoDeImagenes
             imgSep7.SizeMode = PictureBoxSizeMode.Zoom;
             imgSep8.SizeMode = PictureBoxSizeMode.Zoom;
             imgMensajeEstaganografia.SizeMode = PictureBoxSizeMode.Zoom;
-            imgDespuesOpUn.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         private void bGenerarImagen_Click(object sender, EventArgs e)
@@ -612,7 +611,9 @@ namespace ManejoDeImagenes
         {
             Form imagen = new Form();
             PictureBox imagenOrigen = new PictureBox();
-            imagenOrigen.Image = imagenOriginalZoom.Image;
+            PictureBox imagenAux = new PictureBox();
+            imagenAux = (PictureBox)sender;
+            imagenOrigen.Image = imagenAux.Image;
             imagen.Controls.Add(imagenOrigen);
 
             imagenOrigen.Left = 0;
@@ -632,6 +633,5 @@ namespace ManejoDeImagenes
                 pictureBox.Location = new Point(pictureBox.Left + e.X, pictureBox.Top + e.Y);
             }
         }
-
     }
 }

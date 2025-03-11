@@ -810,6 +810,7 @@
             this.imagenGrisLuminosity.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenGrisLuminosity.TabIndex = 5;
             this.imagenGrisLuminosity.TabStop = false;
+            this.imagenGrisLuminosity.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imagenGrisAverage
             // 
@@ -819,6 +820,7 @@
             this.imagenGrisAverage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenGrisAverage.TabIndex = 4;
             this.imagenGrisAverage.TabStop = false;
+            this.imagenGrisAverage.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imagenGrisLightness
             // 
@@ -828,6 +830,7 @@
             this.imagenGrisLightness.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenGrisLightness.TabIndex = 3;
             this.imagenGrisLightness.TabStop = false;
+            this.imagenGrisLightness.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage6
             // 
@@ -866,6 +869,7 @@
             this.imgSep8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep8.TabIndex = 11;
             this.imgSep8.TabStop = false;
+            this.imgSep8.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep7
             // 
@@ -875,6 +879,7 @@
             this.imgSep7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep7.TabIndex = 10;
             this.imgSep7.TabStop = false;
+            this.imgSep7.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep6
             // 
@@ -884,6 +889,7 @@
             this.imgSep6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep6.TabIndex = 9;
             this.imgSep6.TabStop = false;
+            this.imgSep6.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep5
             // 
@@ -893,6 +899,7 @@
             this.imgSep5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep5.TabIndex = 8;
             this.imgSep5.TabStop = false;
+            this.imgSep5.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep4
             // 
@@ -902,6 +909,7 @@
             this.imgSep4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep4.TabIndex = 7;
             this.imgSep4.TabStop = false;
+            this.imgSep4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep3
             // 
@@ -911,6 +919,7 @@
             this.imgSep3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep3.TabIndex = 6;
             this.imgSep3.TabStop = false;
+            this.imgSep3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep2
             // 
@@ -920,6 +929,7 @@
             this.imgSep2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep2.TabIndex = 5;
             this.imgSep2.TabStop = false;
+            this.imgSep2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imgSep1
             // 
@@ -929,6 +939,7 @@
             this.imgSep1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSep1.TabIndex = 4;
             this.imgSep1.TabStop = false;
+            this.imgSep1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage7
             // 
@@ -1665,9 +1676,9 @@
             // 
             // imgUmbralBinarioDespues
             // 
-            this.imgUmbralBinarioDespues.Location = new System.Drawing.Point(3, 3);
+            this.imgUmbralBinarioDespues.Location = new System.Drawing.Point(0, 0);
             this.imgUmbralBinarioDespues.Name = "imgUmbralBinarioDespues";
-            this.imgUmbralBinarioDespues.Size = new System.Drawing.Size(100, 50);
+            this.imgUmbralBinarioDespues.Size = new System.Drawing.Size(100, 100);
             this.imgUmbralBinarioDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgUmbralBinarioDespues.TabIndex = 0;
             this.imgUmbralBinarioDespues.TabStop = false;
@@ -2852,14 +2863,6 @@
             this.imagenHistogramaEstiramientoSalida.TabIndex = 0;
             this.imagenHistogramaEstiramientoSalida.TabStop = false;
             // 
-            // controlHistogramas_estiramiento_salida
-            // 
-            this.controlHistogramas_estiramiento_salida.Canales = null;
-            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
-            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
-            // 
             // tabPage20
             // 
             this.tabPage20.Controls.Add(this.controlHistogramas_estiramiento_salida);
@@ -2870,6 +2873,14 @@
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "Histograma";
             this.tabPage20.UseVisualStyleBackColor = true;
+            // 
+            // controlHistogramas_estiramiento_salida
+            // 
+            this.controlHistogramas_estiramiento_salida.Canales = null;
+            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
+            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
             // 
             // tabControl2
             // 
@@ -2962,6 +2973,7 @@
             this.imagenEqualizacionSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenEqualizacionSalida.TabIndex = 0;
             this.imagenEqualizacionSalida.TabStop = false;
+            this.imagenEqualizacionSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage24
             // 
