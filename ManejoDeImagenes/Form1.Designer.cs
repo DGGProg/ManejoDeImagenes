@@ -41,7 +41,6 @@
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.button1 = new System.Windows.Forms.Button();
             this.btCortar = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.imagenDespuesCorte = new System.Windows.Forms.PictureBox();
             this.tabPage4 = new System.Windows.Forms.TabPage();
@@ -56,6 +55,7 @@
             this.imagenGrisAverage = new System.Windows.Forms.PictureBox();
             this.imagenGrisLightness = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.chkSepararCanales = new System.Windows.Forms.CheckBox();
             this.flowDivSeparar = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
@@ -66,7 +66,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.imgDespuesOpUn = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -114,11 +113,9 @@
             this.txtUBSC3 = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.imgUmbralBinarioDespues = new System.Windows.Forms.PictureBox();
-            this.panel5 = new System.Windows.Forms.Panel();
             this.tabPage8 = new System.Windows.Forms.TabPage();
             this.panel9 = new System.Windows.Forms.Panel();
             this.imgUmbralCorteDespues = new System.Windows.Forms.PictureBox();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
             this.umbralCorteExtencion = new System.Windows.Forms.CheckBox();
             this.umbralCorteInverso = new System.Windows.Forms.CheckBox();
@@ -150,7 +147,6 @@
             this.panelUmbralEscalon = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.imagenUmbralesEscalonDespues = new System.Windows.Forms.PictureBox();
-            this.panel11 = new System.Windows.Forms.Panel();
             this.tabPage10 = new System.Windows.Forms.TabPage();
             this.txtPesoSuma2 = new System.Windows.Forms.NumericUpDown();
             this.txtPesoSuma1 = new System.Windows.Forms.NumericUpDown();
@@ -197,12 +193,9 @@
             this.tabPage13 = new System.Windows.Forms.TabPage();
             this.txtConexas = new System.Windows.Forms.TextBox();
             this.btComponentesConexas = new System.Windows.Forms.Button();
-            this.panel24 = new System.Windows.Forms.Panel();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
-            this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
             this.btHistograma = new System.Windows.Forms.Button();
-            this.panel28 = new System.Windows.Forms.Panel();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.btEstirar = new System.Windows.Forms.Button();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
@@ -222,22 +215,18 @@
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.imagenHistogramaEstiramientoSalida = new System.Windows.Forms.PictureBox();
             this.tabPage20 = new System.Windows.Forms.TabPage();
-            this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.button13 = new System.Windows.Forms.Button();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage23 = new System.Windows.Forms.TabPage();
             this.imagenEqualizacionSalida = new System.Windows.Forms.PictureBox();
             this.tabPage24 = new System.Windows.Forms.TabPage();
-            this.controlHistogramasEqualizacion2 = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.tabPage22 = new System.Windows.Forms.TabPage();
-            this.controlHistogramasEqualizacion1 = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.panel26 = new System.Windows.Forms.Panel();
             this.AplicaRuido = new System.Windows.Forms.Button();
@@ -261,7 +250,6 @@
             this.supRuidoSyP = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
-            this.panel27 = new System.Windows.Forms.Panel();
             this.panel29 = new System.Windows.Forms.Panel();
             this.imgRuidoDes = new System.Windows.Forms.PictureBox();
             this.tabPage26 = new System.Windows.Forms.TabPage();
@@ -281,7 +269,6 @@
             this.fGaussiano = new System.Windows.Forms.RadioButton();
             this.fMedia = new System.Windows.Forms.RadioButton();
             this.aplicaFiltro = new System.Windows.Forms.Button();
-            this.panel31 = new System.Windows.Forms.Panel();
             this.panel32 = new System.Windows.Forms.Panel();
             this.imgFiltrosSalida = new System.Windows.Forms.PictureBox();
             this.tabPage27 = new System.Windows.Forms.TabPage();
@@ -294,7 +281,6 @@
             this.panel36 = new System.Windows.Forms.Panel();
             this.imgSalidaBorde_1_3 = new System.Windows.Forms.PictureBox();
             this.Borde_1 = new System.Windows.Forms.Button();
-            this.panel34 = new System.Windows.Forms.Panel();
             this.panel35 = new System.Windows.Forms.Panel();
             this.imgSalidaBorde_1_1 = new System.Windows.Forms.PictureBox();
             this.tabPage28 = new System.Windows.Forms.TabPage();
@@ -307,7 +293,6 @@
             this.panel42 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_2_3 = new System.Windows.Forms.PictureBox();
             this.Bordes_2 = new System.Windows.Forms.Button();
-            this.panel43 = new System.Windows.Forms.Panel();
             this.panel44 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_2_1 = new System.Windows.Forms.PictureBox();
             this.tabPage29 = new System.Windows.Forms.TabPage();
@@ -320,13 +305,11 @@
             this.panel48 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_3_3 = new System.Windows.Forms.PictureBox();
             this.Bordes_3 = new System.Windows.Forms.Button();
-            this.panel49 = new System.Windows.Forms.Panel();
             this.panel50 = new System.Windows.Forms.Panel();
             this.imgSalidaBordes_3_1 = new System.Windows.Forms.PictureBox();
             this.tabPage30 = new System.Windows.Forms.TabPage();
             this.panel51 = new System.Windows.Forms.Panel();
             this.MagGrad = new System.Windows.Forms.Button();
-            this.panel52 = new System.Windows.Forms.Panel();
             this.panel53 = new System.Windows.Forms.Panel();
             this.imgSalidaMagGrad = new System.Windows.Forms.PictureBox();
             this.tabPage31 = new System.Windows.Forms.TabPage();
@@ -334,7 +317,6 @@
             this.panel56 = new System.Windows.Forms.Panel();
             this.imgPerfiladoSalida_2 = new System.Windows.Forms.PictureBox();
             this.Perfilado = new System.Windows.Forms.Button();
-            this.panel58 = new System.Windows.Forms.Panel();
             this.panel59 = new System.Windows.Forms.Panel();
             this.imgPerfiladoSalida_1 = new System.Windows.Forms.PictureBox();
             this.imagenOriginalZoom = new System.Windows.Forms.PictureBox();
@@ -361,7 +343,11 @@
             this.contrasteAzul = new System.Windows.Forms.NumericUpDown();
             this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.abrirImagenOcultar = new System.Windows.Forms.OpenFileDialog();
-            this.chkSepararCanales = new System.Windows.Forms.CheckBox();
+            this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
+            this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
+            this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
+            this.controlHistogramasEqualizacion2 = new ManejoDeImagenes.ControlHistogramas();
+            this.controlHistogramasEqualizacion1 = new ManejoDeImagenes.ControlHistogramas();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -636,7 +622,6 @@
             // 
             this.tabPage3.Controls.Add(this.button1);
             this.tabPage3.Controls.Add(this.btCortar);
-            this.tabPage3.Controls.Add(this.panel2);
             this.tabPage3.Controls.Add(this.panel3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -666,14 +651,6 @@
             this.btCortar.UseVisualStyleBackColor = true;
             this.btCortar.Click += new System.EventHandler(this.btCortar_Click);
             // 
-            // panel2
-            // 
-            this.panel2.AutoScroll = true;
-            this.panel2.Location = new System.Drawing.Point(7, 56);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(651, 612);
-            this.panel2.TabIndex = 4;
-            // 
             // panel3
             // 
             this.panel3.AutoScroll = true;
@@ -691,6 +668,7 @@
             this.imagenDespuesCorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenDespuesCorte.TabIndex = 1;
             this.imagenDespuesCorte.TabStop = false;
+            this.imagenDespuesCorte.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage4
             // 
@@ -734,6 +712,7 @@
             this.imagenDespuesCuant.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenDespuesCuant.TabIndex = 2;
             this.imagenDespuesCuant.TabStop = false;
+            this.imagenDespuesCuant.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage5
             // 
@@ -831,6 +810,16 @@
             this.tabPage6.Text = "Separa Bits";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // chkSepararCanales
+            // 
+            this.chkSepararCanales.AutoSize = true;
+            this.chkSepararCanales.Location = new System.Drawing.Point(86, 8);
+            this.chkSepararCanales.Name = "chkSepararCanales";
+            this.chkSepararCanales.Size = new System.Drawing.Size(142, 17);
+            this.chkSepararCanales.TabIndex = 14;
+            this.chkSepararCanales.Text = "Separar por canal (RGB)";
+            this.chkSepararCanales.UseVisualStyleBackColor = true;
+            // 
             // flowDivSeparar
             // 
             this.flowDivSeparar.AutoScroll = true;
@@ -880,10 +869,11 @@
             this.imgAOcultar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgAOcultar.TabIndex = 7;
             this.imgAOcultar.TabStop = false;
+            this.imgAOcultar.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // ocultarMensaje
             // 
-            this.ocultarMensaje.Location = new System.Drawing.Point(326, 488);
+            this.ocultarMensaje.Location = new System.Drawing.Point(664, 394);
             this.ocultarMensaje.Name = "ocultarMensaje";
             this.ocultarMensaje.Size = new System.Drawing.Size(75, 23);
             this.ocultarMensaje.TabIndex = 6;
@@ -899,11 +889,11 @@
             this.imgMensajeEstaganografia.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgMensajeEstaganografia.TabIndex = 5;
             this.imgMensajeEstaganografia.TabStop = false;
+            this.imgMensajeEstaganografia.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.panel4);
-            this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.tableLayoutPanel1);
             this.tabPage1.Controls.Add(this.bGenerarImagen);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
@@ -931,14 +921,7 @@
             this.imgDespuesOpUn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgDespuesOpUn.TabIndex = 1;
             this.imgDespuesOpUn.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.AutoScroll = true;
-            this.panel1.Location = new System.Drawing.Point(7, 144);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(650, 524);
-            this.panel1.TabIndex = 4;
+            this.imgDespuesOpUn.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tableLayoutPanel1
             // 
@@ -1327,7 +1310,6 @@
             // 
             this.tabPage2.Controls.Add(this.panel7);
             this.tabPage2.Controls.Add(this.panel6);
-            this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(1333, 674);
@@ -1590,19 +1572,11 @@
             this.imgUmbralBinarioDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgUmbralBinarioDespues.TabIndex = 0;
             this.imgUmbralBinarioDespues.TabStop = false;
-            // 
-            // panel5
-            // 
-            this.panel5.AutoScroll = true;
-            this.panel5.Location = new System.Drawing.Point(6, 147);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(650, 524);
-            this.panel5.TabIndex = 5;
+            this.imgUmbralBinarioDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage8
             // 
             this.tabPage8.Controls.Add(this.panel9);
-            this.tabPage8.Controls.Add(this.panel10);
             this.tabPage8.Controls.Add(this.panel8);
             this.tabPage8.Location = new System.Drawing.Point(4, 22);
             this.tabPage8.Name = "tabPage8";
@@ -1628,14 +1602,7 @@
             this.imgUmbralCorteDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgUmbralCorteDespues.TabIndex = 0;
             this.imgUmbralCorteDespues.TabStop = false;
-            // 
-            // panel10
-            // 
-            this.panel10.AutoScroll = true;
-            this.panel10.Location = new System.Drawing.Point(6, 146);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(650, 524);
-            this.panel10.TabIndex = 9;
+            this.imgUmbralCorteDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel8
             // 
@@ -1893,7 +1860,6 @@
             this.tabPage9.Controls.Add(this.txtNumUmbrales);
             this.tabPage9.Controls.Add(this.panelUmbralEscalon);
             this.tabPage9.Controls.Add(this.panel12);
-            this.tabPage9.Controls.Add(this.panel11);
             this.tabPage9.Location = new System.Drawing.Point(4, 22);
             this.tabPage9.Name = "tabPage9";
             this.tabPage9.Size = new System.Drawing.Size(1333, 674);
@@ -1968,14 +1934,7 @@
             this.imagenUmbralesEscalonDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenUmbralesEscalonDespues.TabIndex = 0;
             this.imagenUmbralesEscalonDespues.TabStop = false;
-            // 
-            // panel11
-            // 
-            this.panel11.AutoScroll = true;
-            this.panel11.Location = new System.Drawing.Point(6, 146);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(650, 524);
-            this.panel11.TabIndex = 10;
+            this.imagenUmbralesEscalonDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage10
             // 
@@ -2128,6 +2087,7 @@
             this.imagenSumaRestaFinal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenSumaRestaFinal.TabIndex = 0;
             this.imagenSumaRestaFinal.TabStop = false;
+            this.imagenSumaRestaFinal.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel14
             // 
@@ -2146,6 +2106,7 @@
             this.imagenSumaResta2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenSumaResta2.TabIndex = 0;
             this.imagenSumaResta2.TabStop = false;
+            this.imagenSumaResta2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel13
             // 
@@ -2164,6 +2125,7 @@
             this.imagenSumaResta1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenSumaResta1.TabIndex = 0;
             this.imagenSumaResta1.TabStop = false;
+            this.imagenSumaResta1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage11
             // 
@@ -2269,6 +2231,7 @@
             this.imagenMultiDiv1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenMultiDiv1.TabIndex = 0;
             this.imagenMultiDiv1.TabStop = false;
+            this.imagenMultiDiv1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // button8
             // 
@@ -2297,6 +2260,7 @@
             this.imagenMultiDiv2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenMultiDiv2.TabIndex = 0;
             this.imagenMultiDiv2.TabStop = false;
+            this.imagenMultiDiv2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel18
             // 
@@ -2315,6 +2279,7 @@
             this.imagenMultiDivResultado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenMultiDivResultado.TabIndex = 0;
             this.imagenMultiDivResultado.TabStop = false;
+            this.imagenMultiDivResultado.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage12
             // 
@@ -2419,6 +2384,7 @@
             this.imagenBooleana1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenBooleana1.TabIndex = 0;
             this.imagenBooleana1.TabStop = false;
+            this.imagenBooleana1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel22
             // 
@@ -2437,6 +2403,7 @@
             this.imagenBooleana2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenBooleana2.TabIndex = 0;
             this.imagenBooleana2.TabStop = false;
+            this.imagenBooleana2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel23
             // 
@@ -2455,12 +2422,12 @@
             this.imagenBoolenaResultado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenBoolenaResultado.TabIndex = 0;
             this.imagenBoolenaResultado.TabStop = false;
+            this.imagenBoolenaResultado.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage13
             // 
             this.tabPage13.Controls.Add(this.txtConexas);
             this.tabPage13.Controls.Add(this.btComponentesConexas);
-            this.tabPage13.Controls.Add(this.panel24);
             this.tabPage13.Location = new System.Drawing.Point(4, 22);
             this.tabPage13.Name = "tabPage13";
             this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
@@ -2488,14 +2455,6 @@
             this.btComponentesConexas.UseVisualStyleBackColor = true;
             this.btComponentesConexas.Click += new System.EventHandler(this.btComponentesConexas_Click);
             // 
-            // panel24
-            // 
-            this.panel24.AutoScroll = true;
-            this.panel24.Location = new System.Drawing.Point(6, 37);
-            this.panel24.Name = "panel24";
-            this.panel24.Size = new System.Drawing.Size(694, 634);
-            this.panel24.TabIndex = 15;
-            // 
             // tabPage14
             // 
             this.tabPage14.Controls.Add(this.panel25);
@@ -2510,19 +2469,10 @@
             // 
             this.panel25.Controls.Add(this.controlHistogramas1);
             this.panel25.Controls.Add(this.btHistograma);
-            this.panel25.Controls.Add(this.panel28);
             this.panel25.Location = new System.Drawing.Point(0, 0);
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(1333, 674);
             this.panel25.TabIndex = 29;
-            // 
-            // controlHistogramas1
-            // 
-            this.controlHistogramas1.Canales = null;
-            this.controlHistogramas1.Location = new System.Drawing.Point(743, 33);
-            this.controlHistogramas1.Name = "controlHistogramas1";
-            this.controlHistogramas1.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas1.TabIndex = 17;
             // 
             // btHistograma
             // 
@@ -2533,14 +2483,6 @@
             this.btHistograma.Text = "Generar Histograma";
             this.btHistograma.UseVisualStyleBackColor = true;
             this.btHistograma.Click += new System.EventHandler(this.btHistograma_Click);
-            // 
-            // panel28
-            // 
-            this.panel28.AutoScroll = true;
-            this.panel28.Location = new System.Drawing.Point(3, 37);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(734, 634);
-            this.panel28.TabIndex = 14;
             // 
             // tabPage15
             // 
@@ -2770,6 +2712,7 @@
             this.imagenHistogramaEstiramientoSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenHistogramaEstiramientoSalida.TabIndex = 0;
             this.imagenHistogramaEstiramientoSalida.TabStop = false;
+            this.imagenHistogramaEstiramientoSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage20
             // 
@@ -2781,14 +2724,6 @@
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "Histograma";
             this.tabPage20.UseVisualStyleBackColor = true;
-            // 
-            // controlHistogramas_estiramiento_salida
-            // 
-            this.controlHistogramas_estiramiento_salida.Canales = null;
-            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
-            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
             // 
             // tabControl2
             // 
@@ -2821,14 +2756,6 @@
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Histograma";
             this.tabPage18.UseVisualStyleBackColor = true;
-            // 
-            // controlHistogramas_estiramiento_entrada
-            // 
-            this.controlHistogramas_estiramiento_entrada.Canales = null;
-            this.controlHistogramas_estiramiento_entrada.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_entrada.Name = "controlHistogramas_estiramiento_entrada";
-            this.controlHistogramas_estiramiento_entrada.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_entrada.TabIndex = 0;
             // 
             // tabPage16
             // 
@@ -2894,14 +2821,6 @@
             this.tabPage24.Text = "Histograma";
             this.tabPage24.UseVisualStyleBackColor = true;
             // 
-            // controlHistogramasEqualizacion2
-            // 
-            this.controlHistogramasEqualizacion2.Canales = null;
-            this.controlHistogramasEqualizacion2.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramasEqualizacion2.Name = "controlHistogramasEqualizacion2";
-            this.controlHistogramasEqualizacion2.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramasEqualizacion2.TabIndex = 0;
-            // 
             // tabControl4
             // 
             this.tabControl4.Controls.Add(this.tabPage21);
@@ -2934,14 +2853,6 @@
             this.tabPage22.Text = "Histograma";
             this.tabPage22.UseVisualStyleBackColor = true;
             // 
-            // controlHistogramasEqualizacion1
-            // 
-            this.controlHistogramasEqualizacion1.Canales = null;
-            this.controlHistogramasEqualizacion1.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramasEqualizacion1.Name = "controlHistogramasEqualizacion1";
-            this.controlHistogramasEqualizacion1.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramasEqualizacion1.TabIndex = 0;
-            // 
             // tabPage25
             // 
             this.tabPage25.Controls.Add(this.panel26);
@@ -2957,7 +2868,6 @@
             // 
             this.panel26.Controls.Add(this.AplicaRuido);
             this.panel26.Controls.Add(this.tableLayoutPanel5);
-            this.panel26.Controls.Add(this.panel27);
             this.panel26.Controls.Add(this.panel29);
             this.panel26.Location = new System.Drawing.Point(2, 3);
             this.panel26.Name = "panel26";
@@ -3173,14 +3083,6 @@
             this.label50.TabIndex = 37;
             this.label50.Text = "b";
             // 
-            // panel27
-            // 
-            this.panel27.AutoScroll = true;
-            this.panel27.Location = new System.Drawing.Point(4, 143);
-            this.panel27.Name = "panel27";
-            this.panel27.Size = new System.Drawing.Size(662, 522);
-            this.panel27.TabIndex = 12;
-            // 
             // panel29
             // 
             this.panel29.AutoScroll = true;
@@ -3198,6 +3100,7 @@
             this.imgRuidoDes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgRuidoDes.TabIndex = 0;
             this.imgRuidoDes.TabStop = false;
+            this.imgRuidoDes.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage26
             // 
@@ -3219,7 +3122,6 @@
             this.panel30.Controls.Add(this.tamano_mascara);
             this.panel30.Controls.Add(this.GBfiltros);
             this.panel30.Controls.Add(this.aplicaFiltro);
-            this.panel30.Controls.Add(this.panel31);
             this.panel30.Controls.Add(this.panel32);
             this.panel30.Location = new System.Drawing.Point(3, 4);
             this.panel30.Name = "panel30";
@@ -3425,21 +3327,13 @@
             // 
             // aplicaFiltro
             // 
-            this.aplicaFiltro.Location = new System.Drawing.Point(616, 111);
+            this.aplicaFiltro.Location = new System.Drawing.Point(604, 53);
             this.aplicaFiltro.Name = "aplicaFiltro";
             this.aplicaFiltro.Size = new System.Drawing.Size(100, 23);
             this.aplicaFiltro.TabIndex = 15;
             this.aplicaFiltro.Text = "Aplicar Filtro";
             this.aplicaFiltro.UseVisualStyleBackColor = true;
             this.aplicaFiltro.Click += new System.EventHandler(this.aplicaFiltro_Click);
-            // 
-            // panel31
-            // 
-            this.panel31.AutoScroll = true;
-            this.panel31.Location = new System.Drawing.Point(4, 143);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(662, 522);
-            this.panel31.TabIndex = 12;
             // 
             // panel32
             // 
@@ -3458,6 +3352,7 @@
             this.imgFiltrosSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgFiltrosSalida.TabIndex = 0;
             this.imgFiltrosSalida.TabStop = false;
+            this.imgFiltrosSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage27
             // 
@@ -3476,7 +3371,6 @@
             this.panel33.Controls.Add(this.panel37);
             this.panel33.Controls.Add(this.panel36);
             this.panel33.Controls.Add(this.Borde_1);
-            this.panel33.Controls.Add(this.panel34);
             this.panel33.Controls.Add(this.panel35);
             this.panel33.Location = new System.Drawing.Point(3, 4);
             this.panel33.Name = "panel33";
@@ -3486,7 +3380,7 @@
             // chkBorde_1
             // 
             this.chkBorde_1.AutoSize = true;
-            this.chkBorde_1.Location = new System.Drawing.Point(117, 266);
+            this.chkBorde_1.Location = new System.Drawing.Point(219, 10);
             this.chkBorde_1.Name = "chkBorde_1";
             this.chkBorde_1.Size = new System.Drawing.Size(77, 17);
             this.chkBorde_1.TabIndex = 19;
@@ -3510,6 +3404,7 @@
             this.imgSalidaBorde_1_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBorde_1_4.TabIndex = 0;
             this.imgSalidaBorde_1_4.TabStop = false;
+            this.imgSalidaBorde_1_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel37
             // 
@@ -3528,6 +3423,7 @@
             this.imgSalidaBorde_1_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBorde_1_2.TabIndex = 0;
             this.imgSalidaBorde_1_2.TabStop = false;
+            this.imgSalidaBorde_1_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel36
             // 
@@ -3546,24 +3442,17 @@
             this.imgSalidaBorde_1_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBorde_1_3.TabIndex = 0;
             this.imgSalidaBorde_1_3.TabStop = false;
+            this.imgSalidaBorde_1_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // Borde_1
             // 
-            this.Borde_1.Location = new System.Drawing.Point(117, 308);
+            this.Borde_1.Location = new System.Drawing.Point(30, 6);
             this.Borde_1.Name = "Borde_1";
             this.Borde_1.Size = new System.Drawing.Size(100, 23);
             this.Borde_1.TabIndex = 15;
             this.Borde_1.Text = "Aplicar Filtro";
             this.Borde_1.UseVisualStyleBackColor = true;
             this.Borde_1.Click += new System.EventHandler(this.Borde_1_Click);
-            // 
-            // panel34
-            // 
-            this.panel34.AutoScroll = true;
-            this.panel34.Location = new System.Drawing.Point(4, 3);
-            this.panel34.Name = "panel34";
-            this.panel34.Size = new System.Drawing.Size(332, 228);
-            this.panel34.TabIndex = 12;
             // 
             // panel35
             // 
@@ -3582,6 +3471,7 @@
             this.imgSalidaBorde_1_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBorde_1_1.TabIndex = 0;
             this.imgSalidaBorde_1_1.TabStop = false;
+            this.imgSalidaBorde_1_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage28
             // 
@@ -3600,7 +3490,6 @@
             this.panel39.Controls.Add(this.panel41);
             this.panel39.Controls.Add(this.panel42);
             this.panel39.Controls.Add(this.Bordes_2);
-            this.panel39.Controls.Add(this.panel43);
             this.panel39.Controls.Add(this.panel44);
             this.panel39.Location = new System.Drawing.Point(1, 3);
             this.panel39.Name = "panel39";
@@ -3610,7 +3499,7 @@
             // chkBorde_2
             // 
             this.chkBorde_2.AutoSize = true;
-            this.chkBorde_2.Location = new System.Drawing.Point(117, 266);
+            this.chkBorde_2.Location = new System.Drawing.Point(223, 6);
             this.chkBorde_2.Name = "chkBorde_2";
             this.chkBorde_2.Size = new System.Drawing.Size(77, 17);
             this.chkBorde_2.TabIndex = 19;
@@ -3634,6 +3523,7 @@
             this.imgSalidaBordes_2_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_2_4.TabIndex = 0;
             this.imgSalidaBordes_2_4.TabStop = false;
+            this.imgSalidaBordes_2_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel41
             // 
@@ -3652,6 +3542,7 @@
             this.imgSalidaBordes_2_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_2_2.TabIndex = 0;
             this.imgSalidaBordes_2_2.TabStop = false;
+            this.imgSalidaBordes_2_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel42
             // 
@@ -3670,24 +3561,17 @@
             this.imgSalidaBordes_2_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_2_3.TabIndex = 0;
             this.imgSalidaBordes_2_3.TabStop = false;
+            this.imgSalidaBordes_2_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // Bordes_2
             // 
-            this.Bordes_2.Location = new System.Drawing.Point(117, 308);
+            this.Bordes_2.Location = new System.Drawing.Point(42, 6);
             this.Bordes_2.Name = "Bordes_2";
             this.Bordes_2.Size = new System.Drawing.Size(100, 23);
             this.Bordes_2.TabIndex = 15;
             this.Bordes_2.Text = "Aplicar Filtro";
             this.Bordes_2.UseVisualStyleBackColor = true;
             this.Bordes_2.Click += new System.EventHandler(this.Bordes_2_Click);
-            // 
-            // panel43
-            // 
-            this.panel43.AutoScroll = true;
-            this.panel43.Location = new System.Drawing.Point(4, 3);
-            this.panel43.Name = "panel43";
-            this.panel43.Size = new System.Drawing.Size(332, 228);
-            this.panel43.TabIndex = 12;
             // 
             // panel44
             // 
@@ -3706,6 +3590,7 @@
             this.imgSalidaBordes_2_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_2_1.TabIndex = 0;
             this.imgSalidaBordes_2_1.TabStop = false;
+            this.imgSalidaBordes_2_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage29
             // 
@@ -3724,7 +3609,6 @@
             this.panel45.Controls.Add(this.panel47);
             this.panel45.Controls.Add(this.panel48);
             this.panel45.Controls.Add(this.Bordes_3);
-            this.panel45.Controls.Add(this.panel49);
             this.panel45.Controls.Add(this.panel50);
             this.panel45.Location = new System.Drawing.Point(0, 3);
             this.panel45.Name = "panel45";
@@ -3734,7 +3618,7 @@
             // chkBordes_3
             // 
             this.chkBordes_3.AutoSize = true;
-            this.chkBordes_3.Location = new System.Drawing.Point(117, 266);
+            this.chkBordes_3.Location = new System.Drawing.Point(219, 6);
             this.chkBordes_3.Name = "chkBordes_3";
             this.chkBordes_3.Size = new System.Drawing.Size(77, 17);
             this.chkBordes_3.TabIndex = 19;
@@ -3758,6 +3642,7 @@
             this.imgSalidaBordes_3_4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_3_4.TabIndex = 0;
             this.imgSalidaBordes_3_4.TabStop = false;
+            this.imgSalidaBordes_3_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel47
             // 
@@ -3776,6 +3661,7 @@
             this.imgSalidaBordes_3_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_3_2.TabIndex = 0;
             this.imgSalidaBordes_3_2.TabStop = false;
+            this.imgSalidaBordes_3_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // panel48
             // 
@@ -3794,24 +3680,17 @@
             this.imgSalidaBordes_3_3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_3_3.TabIndex = 0;
             this.imgSalidaBordes_3_3.TabStop = false;
+            this.imgSalidaBordes_3_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // Bordes_3
             // 
-            this.Bordes_3.Location = new System.Drawing.Point(117, 308);
+            this.Bordes_3.Location = new System.Drawing.Point(41, 2);
             this.Bordes_3.Name = "Bordes_3";
             this.Bordes_3.Size = new System.Drawing.Size(100, 23);
             this.Bordes_3.TabIndex = 15;
             this.Bordes_3.Text = "Aplicar Filtro";
             this.Bordes_3.UseVisualStyleBackColor = true;
             this.Bordes_3.Click += new System.EventHandler(this.Bordes_3_Click);
-            // 
-            // panel49
-            // 
-            this.panel49.AutoScroll = true;
-            this.panel49.Location = new System.Drawing.Point(4, 3);
-            this.panel49.Name = "panel49";
-            this.panel49.Size = new System.Drawing.Size(332, 228);
-            this.panel49.TabIndex = 12;
             // 
             // panel50
             // 
@@ -3830,6 +3709,7 @@
             this.imgSalidaBordes_3_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaBordes_3_1.TabIndex = 0;
             this.imgSalidaBordes_3_1.TabStop = false;
+            this.imgSalidaBordes_3_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage30
             // 
@@ -3844,7 +3724,6 @@
             // panel51
             // 
             this.panel51.Controls.Add(this.MagGrad);
-            this.panel51.Controls.Add(this.panel52);
             this.panel51.Controls.Add(this.panel53);
             this.panel51.Location = new System.Drawing.Point(8, 8);
             this.panel51.Name = "panel51";
@@ -3860,14 +3739,6 @@
             this.MagGrad.Text = "Aplicar Filtro";
             this.MagGrad.UseVisualStyleBackColor = true;
             this.MagGrad.Click += new System.EventHandler(this.MagGrad_Click);
-            // 
-            // panel52
-            // 
-            this.panel52.AutoScroll = true;
-            this.panel52.Location = new System.Drawing.Point(4, 45);
-            this.panel52.Name = "panel52";
-            this.panel52.Size = new System.Drawing.Size(662, 620);
-            this.panel52.TabIndex = 12;
             // 
             // panel53
             // 
@@ -3886,6 +3757,7 @@
             this.imgSalidaMagGrad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgSalidaMagGrad.TabIndex = 0;
             this.imgSalidaMagGrad.TabStop = false;
+            this.imgSalidaMagGrad.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage31
             // 
@@ -3901,7 +3773,6 @@
             // 
             this.panel54.Controls.Add(this.panel56);
             this.panel54.Controls.Add(this.Perfilado);
-            this.panel54.Controls.Add(this.panel58);
             this.panel54.Controls.Add(this.panel59);
             this.panel54.Location = new System.Drawing.Point(0, 3);
             this.panel54.Name = "panel54";
@@ -3925,24 +3796,17 @@
             this.imgPerfiladoSalida_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgPerfiladoSalida_2.TabIndex = 0;
             this.imgPerfiladoSalida_2.TabStop = false;
+            this.imgPerfiladoSalida_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // Perfilado
             // 
-            this.Perfilado.Location = new System.Drawing.Point(117, 308);
+            this.Perfilado.Location = new System.Drawing.Point(112, 6);
             this.Perfilado.Name = "Perfilado";
             this.Perfilado.Size = new System.Drawing.Size(100, 23);
             this.Perfilado.TabIndex = 15;
             this.Perfilado.Text = "Aplicar Filtro";
             this.Perfilado.UseVisualStyleBackColor = true;
             this.Perfilado.Click += new System.EventHandler(this.Perfilado_Click);
-            // 
-            // panel58
-            // 
-            this.panel58.AutoScroll = true;
-            this.panel58.Location = new System.Drawing.Point(4, 3);
-            this.panel58.Name = "panel58";
-            this.panel58.Size = new System.Drawing.Size(332, 228);
-            this.panel58.TabIndex = 12;
             // 
             // panel59
             // 
@@ -3961,10 +3825,11 @@
             this.imgPerfiladoSalida_1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imgPerfiladoSalida_1.TabIndex = 0;
             this.imgPerfiladoSalida_1.TabStop = false;
+            this.imgPerfiladoSalida_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imagenOriginalZoom
             // 
-            this.imagenOriginalZoom.Location = new System.Drawing.Point(21, 114);
+            this.imagenOriginalZoom.Location = new System.Drawing.Point(0, 313);
             this.imagenOriginalZoom.MinimumSize = new System.Drawing.Size(300, 300);
             this.imagenOriginalZoom.Name = "imagenOriginalZoom";
             this.imagenOriginalZoom.Size = new System.Drawing.Size(374, 393);
@@ -3989,6 +3854,7 @@
             this.imagenAntes.Size = new System.Drawing.Size(710, 636);
             this.imagenAntes.TabIndex = 1;
             this.imagenAntes.TabStop = false;
+            this.imagenAntes.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // imagenDespues
             // 
@@ -3998,6 +3864,7 @@
             this.imagenDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenDespues.TabIndex = 2;
             this.imagenDespues.TabStop = false;
+            this.imagenDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // label9
             // 
@@ -4232,15 +4099,45 @@
             this.abrirImagenOcultar.FileName = "openFileDialog1";
             this.abrirImagenOcultar.FileOk += new System.ComponentModel.CancelEventHandler(this.abrirImagenOcultar_FileOk);
             // 
-            // chkSepararCanales
+            // controlHistogramas1
             // 
-            this.chkSepararCanales.AutoSize = true;
-            this.chkSepararCanales.Location = new System.Drawing.Point(86, 8);
-            this.chkSepararCanales.Name = "chkSepararCanales";
-            this.chkSepararCanales.Size = new System.Drawing.Size(142, 17);
-            this.chkSepararCanales.TabIndex = 14;
-            this.chkSepararCanales.Text = "Separar por canal (RGB)";
-            this.chkSepararCanales.UseVisualStyleBackColor = true;
+            this.controlHistogramas1.Canales = null;
+            this.controlHistogramas1.Location = new System.Drawing.Point(743, 33);
+            this.controlHistogramas1.Name = "controlHistogramas1";
+            this.controlHistogramas1.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas1.TabIndex = 17;
+            // 
+            // controlHistogramas_estiramiento_salida
+            // 
+            this.controlHistogramas_estiramiento_salida.Canales = null;
+            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
+            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
+            // 
+            // controlHistogramas_estiramiento_entrada
+            // 
+            this.controlHistogramas_estiramiento_entrada.Canales = null;
+            this.controlHistogramas_estiramiento_entrada.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_entrada.Name = "controlHistogramas_estiramiento_entrada";
+            this.controlHistogramas_estiramiento_entrada.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_entrada.TabIndex = 0;
+            // 
+            // controlHistogramasEqualizacion2
+            // 
+            this.controlHistogramasEqualizacion2.Canales = null;
+            this.controlHistogramasEqualizacion2.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramasEqualizacion2.Name = "controlHistogramasEqualizacion2";
+            this.controlHistogramasEqualizacion2.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramasEqualizacion2.TabIndex = 0;
+            // 
+            // controlHistogramasEqualizacion1
+            // 
+            this.controlHistogramasEqualizacion1.Canales = null;
+            this.controlHistogramasEqualizacion1.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramasEqualizacion1.Name = "controlHistogramasEqualizacion1";
+            this.controlHistogramasEqualizacion1.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramasEqualizacion1.TabIndex = 0;
             // 
             // FormImagenes
             // 
@@ -4522,7 +4419,6 @@
         private System.Windows.Forms.NumericUpDown contrasteAzul;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.PictureBox imagenDespuesCuant;
@@ -4559,7 +4455,6 @@
         private System.Windows.Forms.NumericUpDown div3;
         private System.Windows.Forms.NumericUpDown suma3;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
@@ -4586,11 +4481,9 @@
         private System.Windows.Forms.TrackBar umbralBinarioSuperiorC3;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.PictureBox imgUmbralBinarioDespues;
-        private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.TabPage tabPage8;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.PictureBox imgUmbralCorteDespues;
-        private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Label label27;
@@ -4626,7 +4519,6 @@
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Panel panel12;
         private System.Windows.Forms.PictureBox imagenUmbralesEscalonDespues;
-        private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.TabPage tabPage10;
         private System.Windows.Forms.Button btRestarImagenes;
         private System.Windows.Forms.Button btSumarImagenes;
@@ -4677,7 +4569,6 @@
         private System.Windows.Forms.TabPage tabPage13;
         private System.Windows.Forms.TabPage tabPage14;
         private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Panel panel28;
         private System.Windows.Forms.Button btHistograma;
         private System.Windows.Forms.TabPage tabPage15;
         private System.Windows.Forms.TabPage tabPage16;
@@ -4716,7 +4607,6 @@
         private System.Windows.Forms.TabPage tabPage22;
         private ControlHistogramas controlHistogramasEqualizacion1;
         private System.Windows.Forms.Button btComponentesConexas;
-        private System.Windows.Forms.Panel panel24;
         private System.Windows.Forms.TextBox txtConexas;
         private System.Windows.Forms.TabPage tabPage25;
         private System.Windows.Forms.Panel panel26;
@@ -4733,7 +4623,6 @@
         private System.Windows.Forms.TextBox RuidoSyPTxt;
         private System.Windows.Forms.TrackBar RuidoNormal;
         private System.Windows.Forms.TrackBar RuidoSyP;
-        private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.PictureBox imgRuidoDes;
         private System.Windows.Forms.TextBox centroRuidoG;
@@ -4747,7 +4636,6 @@
         private System.Windows.Forms.TabPage tabPage26;
         private System.Windows.Forms.Panel panel30;
         private System.Windows.Forms.Button aplicaFiltro;
-        private System.Windows.Forms.Panel panel31;
         private System.Windows.Forms.Panel panel32;
         private System.Windows.Forms.PictureBox imgFiltrosSalida;
         private System.Windows.Forms.GroupBox GBfiltros;
@@ -4767,7 +4655,6 @@
         private System.Windows.Forms.TabPage tabPage27;
         private System.Windows.Forms.Panel panel33;
         private System.Windows.Forms.Button Borde_1;
-        private System.Windows.Forms.Panel panel34;
         private System.Windows.Forms.Panel panel35;
         private System.Windows.Forms.PictureBox imgSalidaBorde_1_1;
         private System.Windows.Forms.Panel panel38;
@@ -4787,7 +4674,6 @@
         private System.Windows.Forms.Panel panel42;
         private System.Windows.Forms.PictureBox imgSalidaBordes_2_3;
         private System.Windows.Forms.Button Bordes_2;
-        private System.Windows.Forms.Panel panel43;
         private System.Windows.Forms.Panel panel44;
         private System.Windows.Forms.PictureBox imgSalidaBordes_2_1;
         private System.Windows.Forms.TabPage tabPage29;
@@ -4800,13 +4686,11 @@
         private System.Windows.Forms.Panel panel48;
         private System.Windows.Forms.PictureBox imgSalidaBordes_3_3;
         private System.Windows.Forms.Button Bordes_3;
-        private System.Windows.Forms.Panel panel49;
         private System.Windows.Forms.Panel panel50;
         private System.Windows.Forms.PictureBox imgSalidaBordes_3_1;
         private System.Windows.Forms.TabPage tabPage30;
         private System.Windows.Forms.Panel panel51;
         private System.Windows.Forms.Button MagGrad;
-        private System.Windows.Forms.Panel panel52;
         private System.Windows.Forms.Panel panel53;
         private System.Windows.Forms.PictureBox imgSalidaMagGrad;
         private System.Windows.Forms.TabPage tabPage31;
@@ -4814,7 +4698,6 @@
         private System.Windows.Forms.Panel panel56;
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_2;
         private System.Windows.Forms.Button Perfilado;
-        private System.Windows.Forms.Panel panel58;
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_1;
         private System.Windows.Forms.PictureBox imagenOriginalZoom;
