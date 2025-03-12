@@ -56,6 +56,7 @@
             this.imagenGrisAverage = new System.Windows.Forms.PictureBox();
             this.imagenGrisLightness = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.flowDivSeparar = new System.Windows.Forms.FlowLayoutPanel();
             this.button3 = new System.Windows.Forms.Button();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.btnImgOcultar = new System.Windows.Forms.Button();
@@ -360,7 +361,7 @@
             this.contrasteAzul = new System.Windows.Forms.NumericUpDown();
             this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.abrirImagenOcultar = new System.Windows.Forms.OpenFileDialog();
-            this.flowDivSeparar = new System.Windows.Forms.FlowLayoutPanel();
+            this.chkSepararCanales = new System.Windows.Forms.CheckBox();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -820,6 +821,7 @@
             // tabPage6
             // 
             this.tabPage6.AutoScroll = true;
+            this.tabPage6.Controls.Add(this.chkSepararCanales);
             this.tabPage6.Controls.Add(this.flowDivSeparar);
             this.tabPage6.Controls.Add(this.button3);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
@@ -829,9 +831,17 @@
             this.tabPage6.Text = "Separa Bits";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
+            // flowDivSeparar
+            // 
+            this.flowDivSeparar.AutoScroll = true;
+            this.flowDivSeparar.Location = new System.Drawing.Point(363, 3);
+            this.flowDivSeparar.Name = "flowDivSeparar";
+            this.flowDivSeparar.Size = new System.Drawing.Size(967, 668);
+            this.flowDivSeparar.TabIndex = 13;
+            // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(127, 552);
+            this.button3.Location = new System.Drawing.Point(4, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 12;
@@ -4222,13 +4232,15 @@
             this.abrirImagenOcultar.FileName = "openFileDialog1";
             this.abrirImagenOcultar.FileOk += new System.ComponentModel.CancelEventHandler(this.abrirImagenOcultar_FileOk);
             // 
-            // flowDivSeparar
+            // chkSepararCanales
             // 
-            this.flowDivSeparar.AutoScroll = true;
-            this.flowDivSeparar.Location = new System.Drawing.Point(363, 3);
-            this.flowDivSeparar.Name = "flowDivSeparar";
-            this.flowDivSeparar.Size = new System.Drawing.Size(967, 668);
-            this.flowDivSeparar.TabIndex = 13;
+            this.chkSepararCanales.AutoSize = true;
+            this.chkSepararCanales.Location = new System.Drawing.Point(86, 8);
+            this.chkSepararCanales.Name = "chkSepararCanales";
+            this.chkSepararCanales.Size = new System.Drawing.Size(142, 17);
+            this.chkSepararCanales.TabIndex = 14;
+            this.chkSepararCanales.Text = "Separar por canal (RGB)";
+            this.chkSepararCanales.UseVisualStyleBackColor = true;
             // 
             // FormImagenes
             // 
@@ -4260,6 +4272,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisAverage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLightness)).EndInit();
             this.tabPage6.ResumeLayout(false);
+            this.tabPage6.PerformLayout();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgAOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMensajeEstaganografia)).EndInit();
@@ -4806,6 +4819,7 @@
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_1;
         private System.Windows.Forms.PictureBox imagenOriginalZoom;
         private System.Windows.Forms.FlowLayoutPanel flowDivSeparar;
+        private System.Windows.Forms.CheckBox chkSepararCanales;
     }
 }
 

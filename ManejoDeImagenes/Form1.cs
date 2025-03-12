@@ -117,14 +117,49 @@ namespace ManejoDeImagenes
             {
                 for(int i=1; i <= 8; i++)
                 {
-                    PictureBox pictureBox = new PictureBox
+                    if (chkSepararCanales.Checked)
                     {
-                        SizeMode = PictureBoxSizeMode.Zoom,
-                        Size = new Size(200, 200),
-                        Image = Separar.bit_a_separar(imagenOriginalZoom.Image, i)
-                    };
-                    pictureBox.DoubleClick += imagenOriginalZoom_DoubleClick;
-                    flowDivSeparar.Controls.Add(pictureBox);
+                        Image[] imagenes = Separar.bit_a_separarARGB(imagenOriginalZoom.Image, i);
+                        PictureBox pictureBoxR = new PictureBox
+                        {
+                            SizeMode = PictureBoxSizeMode.Zoom,
+                            Size = new Size(200, 200),
+                            Image=imagenes[1],
+                            BorderStyle = BorderStyle.FixedSingle
+                        };
+                        PictureBox pictureBoxG = new PictureBox
+                        {
+                            SizeMode = PictureBoxSizeMode.Zoom,
+                            Size = new Size(200, 200),
+                            Image = imagenes[2],
+                            BorderStyle = BorderStyle.FixedSingle
+                            
+                        };
+                        PictureBox pictureBoxB = new PictureBox
+                        {
+                            SizeMode = PictureBoxSizeMode.Zoom,
+                            Size = new Size(200, 200),
+                            Image = imagenes[3],
+                            BorderStyle = BorderStyle.FixedSingle
+                        };
+                        pictureBoxR.DoubleClick += imagenOriginalZoom_DoubleClick;
+                        flowDivSeparar.Controls.Add(pictureBoxR);
+                        pictureBoxG.DoubleClick += imagenOriginalZoom_DoubleClick;
+                        flowDivSeparar.Controls.Add(pictureBoxG);
+                        pictureBoxB.DoubleClick += imagenOriginalZoom_DoubleClick;
+                        flowDivSeparar.Controls.Add(pictureBoxB);
+                    }
+                    else
+                    {
+                        PictureBox pictureBox = new PictureBox
+                        {
+                            SizeMode = PictureBoxSizeMode.Zoom,
+                            Size = new Size(200, 200),
+                            Image = Separar.bit_a_separar(imagenOriginalZoom.Image, i)
+                        };
+                        pictureBox.DoubleClick += imagenOriginalZoom_DoubleClick;
+                        flowDivSeparar.Controls.Add(pictureBox);
+                    }
                 }
             }
         }

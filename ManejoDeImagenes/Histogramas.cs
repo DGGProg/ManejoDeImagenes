@@ -57,6 +57,11 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R[(int)punteroPixel[2]]++;
+                                G[(int)punteroPixel[1]]++;
+                                B[(int)punteroPixel[0]]++;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
