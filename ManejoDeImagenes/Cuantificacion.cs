@@ -191,6 +191,31 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                MAX = Math.Max((decimal)punteroPixel[0], (decimal)punteroPixel[1]);
+                                if (MAX == (decimal)punteroPixel[0])
+                                {
+                                    MAX = Math.Max((decimal)punteroPixel[0], (decimal)punteroPixel[2]);
+                                }
+                                else
+                                {
+                                    MAX = Math.Max((decimal)punteroPixel[1], (decimal)punteroPixel[2]);
+                                }
+                                MIN = Math.Min((decimal)punteroPixel[0], (decimal)punteroPixel[1]);
+                                if (MIN == (decimal)punteroPixel[0])
+                                {
+                                    MIN = Math.Min((decimal)punteroPixel[0], (decimal)punteroPixel[2]);
+                                }
+                                else
+                                {
+                                    MIN = Math.Min((decimal)punteroPixel[1], (decimal)punteroPixel[2]);
+                                }
+                                GRIS = Math.Round((MAX + MIN) / 2);
+                                punteroPixelSalida[0] = (byte)GRIS;
+                                punteroPixelSalida[1] = (byte)GRIS;
+                                punteroPixelSalida[2] = (byte)GRIS;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -283,6 +308,14 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                GRIS = (decimal)punteroPixel[0] + (decimal)punteroPixel[1] + (decimal)punteroPixel[2];
+                                GRIS = Math.Round(GRIS / 3);
+                                punteroPixelSalida[0] = (byte)GRIS;
+                                punteroPixelSalida[1] = (byte)GRIS;
+                                punteroPixelSalida[2] = (byte)GRIS;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -374,6 +407,13 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                GRIS = (decimal)Math.Round(0.21 * (double)punteroPixel[0] + 0.71 * (double)punteroPixel[1] + 0.07 * (double)punteroPixel[2]);
+                                punteroPixelSalida[0] = (byte)GRIS;
+                                punteroPixelSalida[1] = (byte)GRIS;
+                                punteroPixelSalida[2] = (byte)GRIS;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;

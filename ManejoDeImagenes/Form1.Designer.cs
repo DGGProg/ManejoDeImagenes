@@ -57,14 +57,6 @@
             this.imagenGrisLightness = new System.Windows.Forms.PictureBox();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.button3 = new System.Windows.Forms.Button();
-            this.imgSep8 = new System.Windows.Forms.PictureBox();
-            this.imgSep7 = new System.Windows.Forms.PictureBox();
-            this.imgSep6 = new System.Windows.Forms.PictureBox();
-            this.imgSep5 = new System.Windows.Forms.PictureBox();
-            this.imgSep4 = new System.Windows.Forms.PictureBox();
-            this.imgSep3 = new System.Windows.Forms.PictureBox();
-            this.imgSep2 = new System.Windows.Forms.PictureBox();
-            this.imgSep1 = new System.Windows.Forms.PictureBox();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.btnImgOcultar = new System.Windows.Forms.Button();
             this.imgAOcultar = new System.Windows.Forms.PictureBox();
@@ -368,6 +360,7 @@
             this.contrasteAzul = new System.Windows.Forms.NumericUpDown();
             this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.abrirImagenOcultar = new System.Windows.Forms.OpenFileDialog();
+            this.flowDivSeparar = new System.Windows.Forms.FlowLayoutPanel();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -381,14 +374,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisAverage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLightness)).BeginInit();
             this.tabPage6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep1)).BeginInit();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.imgAOcultar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMensajeEstaganografia)).BeginInit();
@@ -835,15 +820,8 @@
             // tabPage6
             // 
             this.tabPage6.AutoScroll = true;
+            this.tabPage6.Controls.Add(this.flowDivSeparar);
             this.tabPage6.Controls.Add(this.button3);
-            this.tabPage6.Controls.Add(this.imgSep8);
-            this.tabPage6.Controls.Add(this.imgSep7);
-            this.tabPage6.Controls.Add(this.imgSep6);
-            this.tabPage6.Controls.Add(this.imgSep5);
-            this.tabPage6.Controls.Add(this.imgSep4);
-            this.tabPage6.Controls.Add(this.imgSep3);
-            this.tabPage6.Controls.Add(this.imgSep2);
-            this.tabPage6.Controls.Add(this.imgSep1);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
             this.tabPage6.Size = new System.Drawing.Size(1333, 674);
@@ -860,86 +838,6 @@
             this.button3.Text = "separar";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // imgSep8
-            // 
-            this.imgSep8.Location = new System.Drawing.Point(1161, 269);
-            this.imgSep8.Name = "imgSep8";
-            this.imgSep8.Size = new System.Drawing.Size(260, 230);
-            this.imgSep8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep8.TabIndex = 11;
-            this.imgSep8.TabStop = false;
-            this.imgSep8.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep7
-            // 
-            this.imgSep7.Location = new System.Drawing.Point(895, 269);
-            this.imgSep7.Name = "imgSep7";
-            this.imgSep7.Size = new System.Drawing.Size(260, 230);
-            this.imgSep7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep7.TabIndex = 10;
-            this.imgSep7.TabStop = false;
-            this.imgSep7.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep6
-            // 
-            this.imgSep6.Location = new System.Drawing.Point(629, 269);
-            this.imgSep6.Name = "imgSep6";
-            this.imgSep6.Size = new System.Drawing.Size(260, 230);
-            this.imgSep6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep6.TabIndex = 9;
-            this.imgSep6.TabStop = false;
-            this.imgSep6.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep5
-            // 
-            this.imgSep5.Location = new System.Drawing.Point(363, 269);
-            this.imgSep5.Name = "imgSep5";
-            this.imgSep5.Size = new System.Drawing.Size(260, 230);
-            this.imgSep5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep5.TabIndex = 8;
-            this.imgSep5.TabStop = false;
-            this.imgSep5.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep4
-            // 
-            this.imgSep4.Location = new System.Drawing.Point(1161, 33);
-            this.imgSep4.Name = "imgSep4";
-            this.imgSep4.Size = new System.Drawing.Size(260, 230);
-            this.imgSep4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep4.TabIndex = 7;
-            this.imgSep4.TabStop = false;
-            this.imgSep4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep3
-            // 
-            this.imgSep3.Location = new System.Drawing.Point(895, 33);
-            this.imgSep3.Name = "imgSep3";
-            this.imgSep3.Size = new System.Drawing.Size(260, 230);
-            this.imgSep3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep3.TabIndex = 6;
-            this.imgSep3.TabStop = false;
-            this.imgSep3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep2
-            // 
-            this.imgSep2.Location = new System.Drawing.Point(629, 33);
-            this.imgSep2.Name = "imgSep2";
-            this.imgSep2.Size = new System.Drawing.Size(260, 230);
-            this.imgSep2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep2.TabIndex = 5;
-            this.imgSep2.TabStop = false;
-            this.imgSep2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
-            // 
-            // imgSep1
-            // 
-            this.imgSep1.Location = new System.Drawing.Point(363, 33);
-            this.imgSep1.Name = "imgSep1";
-            this.imgSep1.Size = new System.Drawing.Size(260, 230);
-            this.imgSep1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.imgSep1.TabIndex = 4;
-            this.imgSep1.TabStop = false;
-            this.imgSep1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
             // 
             // tabPage7
             // 
@@ -4324,6 +4222,14 @@
             this.abrirImagenOcultar.FileName = "openFileDialog1";
             this.abrirImagenOcultar.FileOk += new System.ComponentModel.CancelEventHandler(this.abrirImagenOcultar_FileOk);
             // 
+            // flowDivSeparar
+            // 
+            this.flowDivSeparar.AutoScroll = true;
+            this.flowDivSeparar.Location = new System.Drawing.Point(363, 3);
+            this.flowDivSeparar.Name = "flowDivSeparar";
+            this.flowDivSeparar.Size = new System.Drawing.Size(967, 668);
+            this.flowDivSeparar.TabIndex = 13;
+            // 
             // FormImagenes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4354,14 +4260,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisAverage)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imagenGrisLightness)).EndInit();
             this.tabPage6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.imgSep1)).EndInit();
             this.tabPage7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.imgAOcultar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.imgMensajeEstaganografia)).EndInit();
@@ -4626,14 +4524,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.TabPage tabPage6;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.PictureBox imgSep8;
-        private System.Windows.Forms.PictureBox imgSep7;
-        private System.Windows.Forms.PictureBox imgSep6;
-        private System.Windows.Forms.PictureBox imgSep5;
-        private System.Windows.Forms.PictureBox imgSep4;
-        private System.Windows.Forms.PictureBox imgSep3;
-        private System.Windows.Forms.PictureBox imgSep2;
-        private System.Windows.Forms.PictureBox imgSep1;
         private System.Windows.Forms.TabPage tabPage7;
         private System.Windows.Forms.Button ocultarMensaje;
         private System.Windows.Forms.PictureBox imgMensajeEstaganografia;
@@ -4915,6 +4805,7 @@
         private System.Windows.Forms.Panel panel59;
         private System.Windows.Forms.PictureBox imgPerfiladoSalida_1;
         private System.Windows.Forms.PictureBox imagenOriginalZoom;
+        private System.Windows.Forms.FlowLayoutPanel flowDivSeparar;
     }
 }
 

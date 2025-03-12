@@ -40,14 +40,7 @@ namespace ManejoDeImagenes
             imagenGrisLightness.Image = null;
             imagenGrisAverage.Image = null;
             imagenGrisLuminosity.Image = null;
-            imgSep1.Image = null;
-            imgSep2.Image = null;
-            imgSep3.Image = null;
-            imgSep4.Image = null;
-            imgSep5.Image = null;
-            imgSep6.Image = null;
-            imgSep7.Image = null;
-            imgSep8.Image = null;
+
             imgMensajeEstaganografia.Image = null;
             imgDespuesOpUn.Image = null;
 
@@ -56,14 +49,7 @@ namespace ManejoDeImagenes
             imagenGrisLightness.SizeMode = PictureBoxSizeMode.Zoom;
             imagenGrisAverage.SizeMode = PictureBoxSizeMode.Zoom;
             imagenGrisLuminosity.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep1.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep2.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep3.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep4.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep5.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep6.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep7.SizeMode = PictureBoxSizeMode.Zoom;
-            imgSep8.SizeMode = PictureBoxSizeMode.Zoom;
+
             imgMensajeEstaganografia.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
@@ -126,16 +112,20 @@ namespace ManejoDeImagenes
 
         private void button3_Click(object sender, EventArgs e)
         {
+            flowDivSeparar.Controls.Clear();    
             if (imagenOriginalZoom.Image != null)
             {
-                imgSep1.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 1);
-                imgSep2.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 2);
-                imgSep3.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 3);
-                imgSep4.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 4);
-                imgSep5.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 5);
-                imgSep6.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 6);
-                imgSep7.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 7);
-                imgSep8.Image = Separar.bit_a_separar(imagenOriginalZoom.Image, 8);
+                for(int i=1; i <= 8; i++)
+                {
+                    PictureBox pictureBox = new PictureBox
+                    {
+                        SizeMode = PictureBoxSizeMode.Zoom,
+                        Size = new Size(200, 200),
+                        Image = Separar.bit_a_separar(imagenOriginalZoom.Image, i)
+                    };
+                    pictureBox.DoubleClick += imagenOriginalZoom_DoubleClick;
+                    flowDivSeparar.Controls.Add(pictureBox);
+                }
             }
         }
 

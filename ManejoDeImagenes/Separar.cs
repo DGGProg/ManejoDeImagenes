@@ -10,10 +10,14 @@ namespace ManejoDeImagenes
 {
     class Separar
     {
+     /// <summary>
+     /// Separa una imagen por bits del menos al mas significativo (primero convierte la imagen a escala de grises tomando en cuenta 3 canales RGB o 4 para el caso ARGB)
+     /// </summary>
+     /// <param name="pImagenEntrada"></param>
+     /// <param name="bit_a_separar">bit del 1 al 8 que se desea separar</param>
+     /// <returns>Imagen de salida formato 24 bits RGB</returns>
         internal static Image bit_a_separar(Image pImagenEntrada, int bit_a_separar)
         {
-
-
             BitmapData imagenOriginalDatos = ((Bitmap)pImagenEntrada).LockBits(new Rectangle(0, 0, pImagenEntrada.Width, pImagenEntrada.Height), ImageLockMode.ReadWrite, pImagenEntrada.PixelFormat);
 
             int altoImagen = imagenOriginalDatos.Height;
@@ -25,36 +29,7 @@ namespace ManejoDeImagenes
             System.IntPtr primerPixelSalida = imagenSalidaDatos.Scan0;
 
             decimal GRIS;
-            int bit_aux=0;
-            switch (bit_a_separar)
-            {
-                case 1:
-                    bit_aux = 1;
-                    break;
-                case 2:
-                    bit_aux = 2;
-                    break;
-                case 3:
-                    bit_aux = 4;
-                    break;
-                case 4:
-                    bit_aux = 8;
-                    break;
-                case 5:
-                    bit_aux = 16;
-                    break;
-                case 6:
-                    bit_aux = 32;
-                    break;
-                case 7:
-                    bit_aux = 64;
-                    break;
-                case 8:
-                    bit_aux = 128;
-                    break;
-                default:
-                    break;
-            }
+            int bit_aux= 1<<(bit_a_separar-1);
             unsafe
             {
                 byte* punteroPixel = (byte*)(void*)primerPixel;
@@ -86,16 +61,37 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                GRIS = (decimal)punteroPixel[0] + (decimal)punteroPixel[1] + (decimal)punteroPixel[2];
-                                GRIS = Math.Round(GRIS / 3);
-                                GRIS = ((int)GRIS & bit_aux) / bit_aux * 255;
-                                punteroPixelSalida[0] = (byte)GRIS;
-                                punteroPixelSalida[1] = (byte)GRIS;
-                                punteroPixelSalida[2] = (byte)GRIS;
+                                GRIS = (byte)punteroPixel[0] + (byte)punteroPixel[1] + (byte)punteroPixel[2];
+                                GRIS = (byte)Math.Round(GRIS / 3);
+                                GRIS = (byte)GRIS & (1 << (bit_a_separar - 1));
+                                punteroPixelSalida[0] = 0;
+                                punteroPixelSalida[1] = 0;
+                                punteroPixelSalida[2] = 0;
+                                if (GRIS != 0)
+                                {
+                                    punteroPixelSalida[0] = 255;
+                                    punteroPixelSalida[1] = 255;
+                                    punteroPixelSalida[2] = 255;
+                                }
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                GRIS = (byte)punteroPixel[0] + (byte)punteroPixel[1] + (byte)punteroPixel[2] + (byte)punteroPixel[3];
+                                GRIS = Math.Round(GRIS / 4);
+                                GRIS = (byte)GRIS & (1 << (bit_a_separar - 1));
+                                punteroPixelSalida[0] = 0;
+                                punteroPixelSalida[1] = 0;
+                                punteroPixelSalida[2] = 0;
+                                if (GRIS != 0)
+                                {
+                                    punteroPixelSalida[0] = 255;
+                                    punteroPixelSalida[1] = 255;
+                                    punteroPixelSalida[2] = 255;
+                                }
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -110,7 +106,7 @@ namespace ManejoDeImagenes
                             case PixelFormat.Format64bppPArgb:
                                 break;
                             case PixelFormat.Format8bppIndexed:
-                                GRIS = (decimal)punteroPixel[0];
+                                GRIS = (byte)punteroPixel[0];
                                 GRIS = ((int)GRIS & bit_aux) / bit_aux * 255;
                                 punteroPixelSalida[0] = (byte)GRIS;
                                 punteroPixelSalida[1] = (byte)GRIS;
