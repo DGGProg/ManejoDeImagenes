@@ -57,9 +57,9 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                R = Math.Floor(((decimal)punteroPixel[0]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
+                                R = Math.Floor(((decimal)punteroPixel[2]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
                                 G = Math.Floor(((decimal)punteroPixel[1]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
-                                B = Math.Floor(((decimal)punteroPixel[2]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
+                                B = Math.Floor(((decimal)punteroPixel[0]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
                                 R = R * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
                                 G = G * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
                                 B = B * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
@@ -70,6 +70,18 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R = Math.Floor(((decimal)punteroPixel[2]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
+                                G = Math.Floor(((decimal)punteroPixel[1]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
+                                B = Math.Floor(((decimal)punteroPixel[0]) / ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1));
+                                R = R * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
+                                G = G * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
+                                B = B * ((decimal)(Math.Pow(2, 9 - bytesImagen)) - 1);
+                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;

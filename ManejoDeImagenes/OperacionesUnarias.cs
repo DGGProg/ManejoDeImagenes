@@ -54,9 +54,9 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                R = (int)((decimal)punteroPixel[0] * mult_canal_1 / div_canal_1) + suma_canal_1;
+                                R = (int)((decimal)punteroPixel[2] * mult_canal_1 / div_canal_1) + suma_canal_1;
                                 G = (int)((decimal)punteroPixel[1] * mult_canal_2 / div_canal_2) + suma_canal_2;
-                                B = (int)((decimal)punteroPixel[2] * mult_canal_3 / div_canal_3) + suma_canal_3;
+                                B = (int)((decimal)punteroPixel[0] * mult_canal_3 / div_canal_3) + suma_canal_3;
                                 R = (int)Math.Pow((double)R, (double)gama_canal_1);
                                 G = (int)Math.Pow((double)G, (double)gama_canal_2);
                                 B = (int)Math.Pow((double)B, (double)gama_canal_3);
@@ -72,13 +72,37 @@ namespace ManejoDeImagenes
                                     G = 0;
                                 if (B < 0)
                                     B = 0;
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R = (int)((decimal)punteroPixel[2] * mult_canal_1 / div_canal_1) + suma_canal_1;
+                                G = (int)((decimal)punteroPixel[1] * mult_canal_2 / div_canal_2) + suma_canal_2;
+                                B = (int)((decimal)punteroPixel[0] * mult_canal_3 / div_canal_3) + suma_canal_3;
+                                R = (int)Math.Pow((double)R, (double)gama_canal_1);
+                                G = (int)Math.Pow((double)G, (double)gama_canal_2);
+                                B = (int)Math.Pow((double)B, (double)gama_canal_3);
+                                if (R > 255)
+                                    R = 255;
+                                if (G > 255)
+                                    G = 255;
+                                if (B > 255)
+                                    B = 255;
+                                if (R < 0)
+                                    R = 0;
+                                if (G < 0)
+                                    G = 0;
+                                if (B < 0)
+                                    B = 0;
+                                punteroPixelSalida[2] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[0] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -170,9 +194,9 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                R = (int)punteroPixel[0];
+                                R = (int)punteroPixel[2];
                                 G = (int)punteroPixel[1];
-                                B = (int)punteroPixel[2];
+                                B = (int)punteroPixel[0];
                                 if ((R > limite_sup_canal_1) || (R < limite_inf_canal_1))
                                     R = 0;
                                 else
@@ -191,13 +215,40 @@ namespace ManejoDeImagenes
                                     G = 255 - G;
                                     B = 255 - B;
                                 }
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R = (int)punteroPixel[2];
+                                G = (int)punteroPixel[1];
+                                B = (int)punteroPixel[0];
+                                if ((R > limite_sup_canal_1) || (R < limite_inf_canal_1))
+                                    R = 0;
+                                else
+                                    R = 255;
+                                if ((G > limite_sup_canal_2) || (G < limite_inf_canal_2))
+                                    G = 0;
+                                else
+                                    G = 255;
+                                if ((B > limite_sup_canal_3) || (B < limite_inf_canal_3))
+                                    B = 0;
+                                else
+                                    B = 255;
+                                if (inverso)
+                                {
+                                    R = 255 - R;
+                                    G = 255 - G;
+                                    B = 255 - B;
+                                }
+                                punteroPixelSalida[2] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[0] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -292,9 +343,9 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                R = (int)punteroPixel[0];
+                                R = (int)punteroPixel[2];
                                 G = (int)punteroPixel[1];
-                                B = (int)punteroPixel[2];
+                                B = (int)punteroPixel[0];
                                 if ((R > limite_sup_canal_1) || (R < limite_inf_canal_1))
                                     R = 0;
                                 else
@@ -316,13 +367,43 @@ namespace ManejoDeImagenes
                                     G = 255 - G;
                                     B = 255 - B;
                                 }
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R = (int)punteroPixel[2];
+                                G = (int)punteroPixel[1];
+                                B = (int)punteroPixel[0];
+                                if ((R > limite_sup_canal_1) || (R < limite_inf_canal_1))
+                                    R = 0;
+                                else
+                                    if (extension)
+                                    R = 255 * (R - limite_inf_canal_1) / (limite_sup_canal_1 - limite_inf_canal_1);
+                                if ((G > limite_sup_canal_2) || (G < limite_inf_canal_2))
+                                    G = 0;
+                                else
+                                    if (extension)
+                                    G = 255 * (G - limite_inf_canal_1) / (limite_sup_canal_1 - limite_inf_canal_1);
+                                if ((B > limite_sup_canal_3) || (B < limite_inf_canal_3))
+                                    B = 0;
+                                else
+                                    if (extension)
+                                    B = 255 * (B - limite_inf_canal_1) / (limite_sup_canal_1 - limite_inf_canal_1);
+                                if (inverso)
+                                {
+                                    R = 255 - R;
+                                    G = 255 - G;
+                                    B = 255 - B;
+                                }
+                                punteroPixelSalida[2] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[0] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -415,9 +496,9 @@ namespace ManejoDeImagenes
                                 break;
                             case PixelFormat.Format24bppRgb:
                                 //obtiene el valor del canal de color del pixel
-                                R = (int)punteroPixel[0];
+                                R = (int)punteroPixel[2];
                                 G = (int)punteroPixel[1];
-                                B = (int)punteroPixel[2];
+                                B = (int)punteroPixel[0];
                                 if (R > umbrales[umbrales.Length - 1])
                                 { R = 255; }
                                 else
@@ -466,13 +547,70 @@ namespace ManejoDeImagenes
                                         }
                                     }
                                 }
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                R = (int)punteroPixel[2];
+                                G = (int)punteroPixel[1];
+                                B = (int)punteroPixel[0];
+                                if (R > umbrales[umbrales.Length - 1])
+                                { R = 255; }
+                                else
+                                {
+                                    for (int i = 0; i < umbrales.Length; i++)
+                                    {
+                                        if (R <= umbrales[i])
+                                        {
+                                            if (i == 0)
+                                            { R = 0; }
+                                            else
+                                            { R = umbrales[i - 1]; }
+                                            break;
+                                        }
+                                    }
+                                }
+                                if (G > umbrales[umbrales.Length - 1])
+                                { G = 255; }
+                                else
+                                {
+                                    for (int i = 0; i < umbrales.Length; i++)
+                                    {
+                                        if (G <= umbrales[i])
+                                        {
+                                            if (i == 0)
+                                            { G = 0; }
+                                            else
+                                            { G = umbrales[i - 1]; }
+                                            break;
+                                        }
+                                    }
+                                }
+                                if (B > umbrales[umbrales.Length - 1])
+                                { B = 255; }
+                                else
+                                {
+                                    for (int i = 0; i < umbrales.Length; i++)
+                                    {
+                                        if (B <= umbrales[i])
+                                        {
+                                            if (i == 0)
+                                            { B = 0; }
+                                            else
+                                            { B = umbrales[i - 1]; }
+                                            break;
+                                        }
+                                    }
+                                }
+                                punteroPixelSalida[2] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[0] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;

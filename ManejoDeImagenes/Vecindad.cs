@@ -51,10 +51,12 @@ namespace ManejoDeImagenes
                     case PixelFormat.Format1bppIndexed:
                         break;
                     case PixelFormat.Format24bppRgb:
-                        //obtiene el valor del canal de color del pixel
+                        //representa los canales de color de la imagen
                         paso = 3;
                         break;
                     case PixelFormat.Format32bppArgb:
+                        //representa los canales de color de la imagen
+                        paso = 4;
                         break;
                     case PixelFormat.Format32bppPArgb:
                         break;

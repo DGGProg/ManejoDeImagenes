@@ -63,6 +63,15 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                if (((columna % 2) == 0) && ((renglon % 2) == 0))
+                                {
+                                    punteroPixelSalida[0] = punteroPixel[0];
+                                    punteroPixelSalida[1] = punteroPixel[1];
+                                    punteroPixelSalida[2] = punteroPixel[2];
+                                    punteroPixelSalida += 3;
+                                }
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;
@@ -173,6 +182,27 @@ namespace ManejoDeImagenes
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                //obtiene el valor del canal de color del pixel
+                                if (ren_ant != renglon)
+                                {
+                                    ren_ant = renglon;
+                                    punteroPixelSalida += (anchoImagen * 6);
+                                }
+                                punteroPixelSalida[0] = punteroPixel[0];
+                                punteroPixelSalida[1] = punteroPixel[1];
+                                punteroPixelSalida[2] = punteroPixel[2];
+                                punteroPixelSalida[3] = punteroPixel[0];
+                                punteroPixelSalida[4] = punteroPixel[1];
+                                punteroPixelSalida[5] = punteroPixel[2];
+                                (punteroPixelSalida + (anchoImagen * 6))[0] = punteroPixel[0];
+                                (punteroPixelSalida + (anchoImagen * 6))[1] = punteroPixel[1];
+                                (punteroPixelSalida + (anchoImagen * 6))[2] = punteroPixel[2];
+                                (punteroPixelSalida + (anchoImagen * 6))[3] = punteroPixel[0];
+                                (punteroPixelSalida + (anchoImagen * 6))[4] = punteroPixel[1];
+                                (punteroPixelSalida + (anchoImagen * 6))[5] = punteroPixel[2];
+                                punteroPixelSalida += 6;
+
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;

@@ -322,6 +322,7 @@ namespace ManejoDeImagenes
 
         private void btSumarImagenes_Click(object sender, EventArgs e)
         {
+            imagenSumaResta1.Image = imagenOriginalZoom.Image;
             if ((imagenSumaResta1.Image != null) && (imagenSumaResta2.Image != null))
             {
                 imagenSumaRestaFinal.Image = Operaciones2Imagenes.suma_imagenes(imagenSumaResta1.Image, imagenSumaResta2.Image, txtPesoSuma1.Value, txtPesoSuma2.Value);
@@ -330,6 +331,7 @@ namespace ManejoDeImagenes
 
         private void btRestarImagenes_Click(object sender, EventArgs e)
         {
+            imagenSumaResta1.Image = imagenOriginalZoom.Image;
             if ((imagenSumaResta1.Image != null) && (imagenSumaResta2.Image != null))
             {
                 imagenSumaRestaFinal.Image = Operaciones2Imagenes.resta_imagenes(imagenSumaResta1.Image, imagenSumaResta2.Image);
@@ -338,6 +340,7 @@ namespace ManejoDeImagenes
 
         private void button8_Click(object sender, EventArgs e)
         {
+            imagenMultiDiv1.Image = imagenOriginalZoom.Image;
             if ((imagenMultiDiv1.Image != null) && (imagenMultiDiv2.Image != null))
             {
                 imagenMultiDivResultado.Image = Operaciones2Imagenes.multiplica_imagenes(imagenMultiDiv1.Image, imagenMultiDiv2.Image, txtPesoMultiDiv.Value);
@@ -346,6 +349,7 @@ namespace ManejoDeImagenes
 
         private void button9_Click(object sender, EventArgs e)
         {
+            imagenMultiDiv1.Image = imagenOriginalZoom.Image;
             if ((imagenMultiDiv1.Image != null) && (imagenMultiDiv2.Image != null))
             {
                 imagenMultiDivResultado.Image = Operaciones2Imagenes.divide_imagenes(imagenMultiDiv1.Image, imagenMultiDiv2.Image, txtPesoMultiDiv.Value);
@@ -420,6 +424,7 @@ namespace ManejoDeImagenes
 
         private void btAND_Click(object sender, EventArgs e)
         {
+            imagenBooleana1.Image = imagenOriginalZoom.Image;
             if ((imagenBooleana1.Image != null) && (imagenBooleana2.Image != null))
             {
                 imagenBoolenaResultado.Image = Operaciones2Imagenes.AND_imagenes(imagenBooleana1.Image, imagenBooleana2.Image, chkNOT1.Checked);
@@ -428,6 +433,7 @@ namespace ManejoDeImagenes
 
         private void btOR_Click(object sender, EventArgs e)
         {
+            imagenBooleana1.Image = imagenOriginalZoom.Image;
             if ((imagenBooleana1.Image != null) && (imagenBooleana2.Image != null))
             {
                 imagenBoolenaResultado.Image = Operaciones2Imagenes.OR_imagenes(imagenBooleana1.Image, imagenBooleana2.Image, chkNOT1.Checked);
@@ -436,6 +442,7 @@ namespace ManejoDeImagenes
 
         private void btXOR_Click(object sender, EventArgs e)
         {
+            imagenBooleana1.Image = imagenOriginalZoom.Image;
             if ((imagenBooleana1.Image != null) && (imagenBooleana2.Image != null))
             {
                 imagenBoolenaResultado.Image = Operaciones2Imagenes.XOR_imagenes(imagenBooleana1.Image, imagenBooleana2.Image, chkNOT1.Checked);

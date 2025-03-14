@@ -55,9 +55,9 @@ namespace ManejoDeImagenes
                             case PixelFormat.Format1bppIndexed:
                                 break;
                             case PixelFormat.Format24bppRgb:
-                                R = (int)(decimal)punteroPixel[0];
+                                R = (int)(decimal)punteroPixel[2];
                                 G = (int)(decimal)punteroPixel[1];
-                                B = (int)(decimal)punteroPixel[2];
+                                B = (int)(decimal)punteroPixel[0];
                                 if (gauss.Next(0, 100) < Gauss_x100)
                                 {
                                     double u1 = rand.NextDouble(); //these are uniform(0,1) random doubles
@@ -102,13 +102,65 @@ namespace ManejoDeImagenes
                                     G = 0;
                                 if (B < 0)
                                     B = 0;
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
+                                R = (int)(decimal)punteroPixel[2];
+                                G = (int)(decimal)punteroPixel[1];
+                                B = (int)(decimal)punteroPixel[0];
+                                if (gauss.Next(0, 100) < Gauss_x100)
+                                {
+                                    double u1 = rand.NextDouble(); //these are uniform(0,1) random doubles
+                                    double u2 = rand.NextDouble();
+                                    double randStdNormal = Math.Sqrt(-2.0 * Math.Log(u1)) *
+                                                 Math.Sin(2.0 * Math.PI * u2); //random normal(0,1)
+                                    double randNormal =
+                                                 Gauss_centro + (double)Gauss_sigma * randStdNormal; //random normal(mean,stdDev^2)
+                                    ruido_aux = (int)randNormal;
+                                    R += ruido_aux;
+                                    G += ruido_aux;
+                                    B += ruido_aux;
+                                }
+                                if (uniforme.Next(0, 100) < Uniforme_x100)
+                                {
+                                    ruido_aux = uniforme.Next(Uniforme_a, Uniforme_b);
+                                    R += ruido_aux;
+                                    G += ruido_aux;
+                                    B += ruido_aux;
+                                }
+                                if (SyP.Next(0, 100) < SyP_x100)
+                                {
+                                    if (SyP.Next(0, 100) < 50)
+                                    {
+                                        R = G = B = SyP_a;
+                                    }
+                                    else
+                                    {
+                                        R = G = B = SyP_b;
+                                    }
+                                }
+                                //obtiene el valor del canal de color del pixel
+                                if (R > 255)
+                                    R = 255;
+                                if (G > 255)
+                                    G = 255;
+                                if (B > 255)
+                                    B = 255;
+                                if (R < 0)
+                                    R = 0;
+                                if (G < 0)
+                                    G = 0;
+                                if (B < 0)
+                                    B = 0;
+                                punteroPixelSalida[2] = (byte)R;
+                                punteroPixelSalida[1] = (byte)G;
+                                punteroPixelSalida[0] = (byte)B;
+                                punteroPixelSalida += 3;
+                                punteroPixel += 4;
                                 break;
                             case PixelFormat.Format32bppPArgb:
                                 break;

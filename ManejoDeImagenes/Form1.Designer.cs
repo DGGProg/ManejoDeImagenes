@@ -965,27 +965,27 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(3, 25);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(51, 13);
+            this.label13.Size = new System.Drawing.Size(53, 13);
             this.label13.TabIndex = 0;
-            this.label13.Text = "CANAL 1";
+            this.label13.Text = "CANAL R";
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(3, 50);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(51, 13);
+            this.label14.Size = new System.Drawing.Size(53, 13);
             this.label14.TabIndex = 1;
-            this.label14.Text = "CANAL 2";
+            this.label14.Text = "CANAL G";
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(3, 75);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(51, 13);
+            this.label15.Size = new System.Drawing.Size(52, 13);
             this.label15.TabIndex = 2;
-            this.label15.Text = "CANAL 3";
+            this.label15.Text = "CANAL B";
             // 
             // mult1
             // 
@@ -1389,27 +1389,27 @@
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(3, 25);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(51, 13);
+            this.label20.Size = new System.Drawing.Size(53, 13);
             this.label20.TabIndex = 0;
-            this.label20.Text = "CANAL 1";
+            this.label20.Text = "CANAL R";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(3, 50);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(51, 13);
+            this.label21.Size = new System.Drawing.Size(53, 13);
             this.label21.TabIndex = 1;
-            this.label21.Text = "CANAL 2";
+            this.label21.Text = "CANAL G";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(3, 75);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(51, 13);
+            this.label22.Size = new System.Drawing.Size(52, 13);
             this.label22.TabIndex = 2;
-            this.label22.Text = "CANAL 3";
+            this.label22.Text = "CANAL B";
             // 
             // label23
             // 
@@ -1687,27 +1687,27 @@
             this.label27.AutoSize = true;
             this.label27.Location = new System.Drawing.Point(3, 25);
             this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(51, 13);
+            this.label27.Size = new System.Drawing.Size(53, 13);
             this.label27.TabIndex = 0;
-            this.label27.Text = "CANAL 1";
+            this.label27.Text = "CANAL R";
             // 
             // label28
             // 
             this.label28.AutoSize = true;
             this.label28.Location = new System.Drawing.Point(3, 50);
             this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(51, 13);
+            this.label28.Size = new System.Drawing.Size(53, 13);
             this.label28.TabIndex = 1;
-            this.label28.Text = "CANAL 2";
+            this.label28.Text = "CANAL G";
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Location = new System.Drawing.Point(3, 75);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(51, 13);
+            this.label29.Size = new System.Drawing.Size(52, 13);
             this.label29.TabIndex = 2;
-            this.label29.Text = "CANAL 3";
+            this.label29.Text = "CANAL B";
             // 
             // label30
             // 

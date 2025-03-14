@@ -63,6 +63,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -75,6 +79,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -86,7 +94,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1)&&(renglon < altoImagen1))
                             {
@@ -377,6 +385,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -389,6 +401,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -400,7 +416,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -696,6 +712,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -708,6 +728,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -719,7 +743,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -1010,6 +1034,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -1022,6 +1050,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -1033,7 +1065,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -1330,6 +1362,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -1342,6 +1378,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -1353,7 +1393,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -1653,6 +1693,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -1665,6 +1709,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -1676,7 +1724,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -1974,6 +2022,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -1986,6 +2038,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -1997,7 +2053,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
@@ -2295,6 +2351,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso1 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso1 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso1 = 1;
                         break;
@@ -2307,6 +2367,10 @@ namespace ManejoDeImagenes
                         //obtiene el valor del canal de color del pixel
                         paso2 = 3;
                         break;
+                    case PixelFormat.Format32bppArgb:
+                        //obtiene el valor del canal de color del pixel
+                        paso2 = 4;
+                        break;
                     case PixelFormat.Format8bppIndexed:
                         paso2 = 1;
                         break;
@@ -2318,7 +2382,7 @@ namespace ManejoDeImagenes
                 {
                     for (int columna = 0; columna < anchoImageSalida; columna++)
                     {
-                        if ((paso1 == 3) && (paso2 == 3))
+                        if ((paso1 != 0) && (paso2 != 0))
                         {
                             if ((columna < anchoImagen1) && (renglon < altoImagen1))
                             {
