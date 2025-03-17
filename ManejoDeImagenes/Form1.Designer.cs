@@ -32,7 +32,6 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.abrirImagenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.guardarImagenToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -195,6 +194,7 @@
             this.btComponentesConexas = new System.Windows.Forms.Button();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.panel25 = new System.Windows.Forms.Panel();
+            this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
             this.btHistograma = new System.Windows.Forms.Button();
             this.tabPage15 = new System.Windows.Forms.TabPage();
             this.btEstirar = new System.Windows.Forms.Button();
@@ -215,18 +215,22 @@
             this.tabPage19 = new System.Windows.Forms.TabPage();
             this.imagenHistogramaEstiramientoSalida = new System.Windows.Forms.PictureBox();
             this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage17 = new System.Windows.Forms.TabPage();
             this.tabPage18 = new System.Windows.Forms.TabPage();
+            this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage16 = new System.Windows.Forms.TabPage();
             this.button13 = new System.Windows.Forms.Button();
             this.tabControl5 = new System.Windows.Forms.TabControl();
             this.tabPage23 = new System.Windows.Forms.TabPage();
             this.imagenEqualizacionSalida = new System.Windows.Forms.PictureBox();
             this.tabPage24 = new System.Windows.Forms.TabPage();
+            this.controlHistogramasEqualizacion2 = new ManejoDeImagenes.ControlHistogramas();
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage21 = new System.Windows.Forms.TabPage();
             this.tabPage22 = new System.Windows.Forms.TabPage();
+            this.controlHistogramasEqualizacion1 = new ManejoDeImagenes.ControlHistogramas();
             this.tabPage25 = new System.Windows.Forms.TabPage();
             this.panel26 = new System.Windows.Forms.Panel();
             this.AplicaRuido = new System.Windows.Forms.Button();
@@ -343,11 +347,6 @@
             this.contrasteAzul = new System.Windows.Forms.NumericUpDown();
             this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.abrirImagenOcultar = new System.Windows.Forms.OpenFileDialog();
-            this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
-            this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
-            this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
-            this.controlHistogramasEqualizacion2 = new ManejoDeImagenes.ControlHistogramas();
-            this.controlHistogramasEqualizacion1 = new ManejoDeImagenes.ControlHistogramas();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -538,7 +537,6 @@
             // 
             this.inicioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.abrirImagenToolStripMenuItem,
-            this.guardarImagenToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.inicioToolStripMenuItem.Name = "inicioToolStripMenuItem";
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
@@ -547,21 +545,14 @@
             // abrirImagenToolStripMenuItem
             // 
             this.abrirImagenToolStripMenuItem.Name = "abrirImagenToolStripMenuItem";
-            this.abrirImagenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.abrirImagenToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.abrirImagenToolStripMenuItem.Text = "Abrir Imagen";
             this.abrirImagenToolStripMenuItem.Click += new System.EventHandler(this.abrirImagenToolStripMenuItem_Click);
-            // 
-            // guardarImagenToolStripMenuItem
-            // 
-            this.guardarImagenToolStripMenuItem.Name = "guardarImagenToolStripMenuItem";
-            this.guardarImagenToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
-            this.guardarImagenToolStripMenuItem.Text = "Guardar Imagen";
-            this.guardarImagenToolStripMenuItem.Click += new System.EventHandler(this.guardarImagenToolStripMenuItem_Click);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(159, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -669,6 +660,7 @@
             this.imagenDespuesCorte.TabIndex = 1;
             this.imagenDespuesCorte.TabStop = false;
             this.imagenDespuesCorte.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenDespuesCorte.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage4
             // 
@@ -713,6 +705,7 @@
             this.imagenDespuesCuant.TabIndex = 2;
             this.imagenDespuesCuant.TabStop = false;
             this.imagenDespuesCuant.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenDespuesCuant.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage5
             // 
@@ -776,6 +769,7 @@
             this.imagenGrisLuminosity.TabIndex = 5;
             this.imagenGrisLuminosity.TabStop = false;
             this.imagenGrisLuminosity.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenGrisLuminosity.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // imagenGrisAverage
             // 
@@ -786,6 +780,7 @@
             this.imagenGrisAverage.TabIndex = 4;
             this.imagenGrisAverage.TabStop = false;
             this.imagenGrisAverage.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenGrisAverage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // imagenGrisLightness
             // 
@@ -796,6 +791,7 @@
             this.imagenGrisLightness.TabIndex = 3;
             this.imagenGrisLightness.TabStop = false;
             this.imagenGrisLightness.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenGrisLightness.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage6
             // 
@@ -922,6 +918,7 @@
             this.imgDespuesOpUn.TabIndex = 1;
             this.imgDespuesOpUn.TabStop = false;
             this.imgDespuesOpUn.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgDespuesOpUn.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tableLayoutPanel1
             // 
@@ -1573,6 +1570,7 @@
             this.imgUmbralBinarioDespues.TabIndex = 0;
             this.imgUmbralBinarioDespues.TabStop = false;
             this.imgUmbralBinarioDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgUmbralBinarioDespues.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage8
             // 
@@ -1603,6 +1601,7 @@
             this.imgUmbralCorteDespues.TabIndex = 0;
             this.imgUmbralCorteDespues.TabStop = false;
             this.imgUmbralCorteDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgUmbralCorteDespues.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel8
             // 
@@ -1935,6 +1934,7 @@
             this.imagenUmbralesEscalonDespues.TabIndex = 0;
             this.imagenUmbralesEscalonDespues.TabStop = false;
             this.imagenUmbralesEscalonDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenUmbralesEscalonDespues.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage10
             // 
@@ -2088,6 +2088,7 @@
             this.imagenSumaRestaFinal.TabIndex = 0;
             this.imagenSumaRestaFinal.TabStop = false;
             this.imagenSumaRestaFinal.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenSumaRestaFinal.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel14
             // 
@@ -2280,6 +2281,7 @@
             this.imagenMultiDivResultado.TabIndex = 0;
             this.imagenMultiDivResultado.TabStop = false;
             this.imagenMultiDivResultado.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenMultiDivResultado.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage12
             // 
@@ -2423,6 +2425,7 @@
             this.imagenBoolenaResultado.TabIndex = 0;
             this.imagenBoolenaResultado.TabStop = false;
             this.imagenBoolenaResultado.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenBoolenaResultado.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage13
             // 
@@ -2473,6 +2476,14 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(1333, 674);
             this.panel25.TabIndex = 29;
+            // 
+            // controlHistogramas1
+            // 
+            this.controlHistogramas1.Canales = null;
+            this.controlHistogramas1.Location = new System.Drawing.Point(743, 33);
+            this.controlHistogramas1.Name = "controlHistogramas1";
+            this.controlHistogramas1.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas1.TabIndex = 17;
             // 
             // btHistograma
             // 
@@ -2713,6 +2724,7 @@
             this.imagenHistogramaEstiramientoSalida.TabIndex = 0;
             this.imagenHistogramaEstiramientoSalida.TabStop = false;
             this.imagenHistogramaEstiramientoSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenHistogramaEstiramientoSalida.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage20
             // 
@@ -2724,6 +2736,14 @@
             this.tabPage20.TabIndex = 1;
             this.tabPage20.Text = "Histograma";
             this.tabPage20.UseVisualStyleBackColor = true;
+            // 
+            // controlHistogramas_estiramiento_salida
+            // 
+            this.controlHistogramas_estiramiento_salida.Canales = null;
+            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
+            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
             // 
             // tabControl2
             // 
@@ -2756,6 +2776,14 @@
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Histograma";
             this.tabPage18.UseVisualStyleBackColor = true;
+            // 
+            // controlHistogramas_estiramiento_entrada
+            // 
+            this.controlHistogramas_estiramiento_entrada.Canales = null;
+            this.controlHistogramas_estiramiento_entrada.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramas_estiramiento_entrada.Name = "controlHistogramas_estiramiento_entrada";
+            this.controlHistogramas_estiramiento_entrada.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramas_estiramiento_entrada.TabIndex = 0;
             // 
             // tabPage16
             // 
@@ -2809,6 +2837,7 @@
             this.imagenEqualizacionSalida.TabIndex = 0;
             this.imagenEqualizacionSalida.TabStop = false;
             this.imagenEqualizacionSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenEqualizacionSalida.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage24
             // 
@@ -2820,6 +2849,14 @@
             this.tabPage24.TabIndex = 1;
             this.tabPage24.Text = "Histograma";
             this.tabPage24.UseVisualStyleBackColor = true;
+            // 
+            // controlHistogramasEqualizacion2
+            // 
+            this.controlHistogramasEqualizacion2.Canales = null;
+            this.controlHistogramasEqualizacion2.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramasEqualizacion2.Name = "controlHistogramasEqualizacion2";
+            this.controlHistogramasEqualizacion2.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramasEqualizacion2.TabIndex = 0;
             // 
             // tabControl4
             // 
@@ -2852,6 +2889,14 @@
             this.tabPage22.TabIndex = 1;
             this.tabPage22.Text = "Histograma";
             this.tabPage22.UseVisualStyleBackColor = true;
+            // 
+            // controlHistogramasEqualizacion1
+            // 
+            this.controlHistogramasEqualizacion1.Canales = null;
+            this.controlHistogramasEqualizacion1.Location = new System.Drawing.Point(6, 3);
+            this.controlHistogramasEqualizacion1.Name = "controlHistogramasEqualizacion1";
+            this.controlHistogramasEqualizacion1.Size = new System.Drawing.Size(587, 638);
+            this.controlHistogramasEqualizacion1.TabIndex = 0;
             // 
             // tabPage25
             // 
@@ -3101,6 +3146,7 @@
             this.imgRuidoDes.TabIndex = 0;
             this.imgRuidoDes.TabStop = false;
             this.imgRuidoDes.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgRuidoDes.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage26
             // 
@@ -3353,6 +3399,7 @@
             this.imgFiltrosSalida.TabIndex = 0;
             this.imgFiltrosSalida.TabStop = false;
             this.imgFiltrosSalida.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgFiltrosSalida.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage27
             // 
@@ -3405,6 +3452,7 @@
             this.imgSalidaBorde_1_4.TabIndex = 0;
             this.imgSalidaBorde_1_4.TabStop = false;
             this.imgSalidaBorde_1_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBorde_1_4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel37
             // 
@@ -3424,6 +3472,7 @@
             this.imgSalidaBorde_1_2.TabIndex = 0;
             this.imgSalidaBorde_1_2.TabStop = false;
             this.imgSalidaBorde_1_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBorde_1_2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel36
             // 
@@ -3443,6 +3492,7 @@
             this.imgSalidaBorde_1_3.TabIndex = 0;
             this.imgSalidaBorde_1_3.TabStop = false;
             this.imgSalidaBorde_1_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBorde_1_3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // Borde_1
             // 
@@ -3472,6 +3522,7 @@
             this.imgSalidaBorde_1_1.TabIndex = 0;
             this.imgSalidaBorde_1_1.TabStop = false;
             this.imgSalidaBorde_1_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBorde_1_1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage28
             // 
@@ -3524,6 +3575,7 @@
             this.imgSalidaBordes_2_4.TabIndex = 0;
             this.imgSalidaBordes_2_4.TabStop = false;
             this.imgSalidaBordes_2_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_2_4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel41
             // 
@@ -3543,6 +3595,7 @@
             this.imgSalidaBordes_2_2.TabIndex = 0;
             this.imgSalidaBordes_2_2.TabStop = false;
             this.imgSalidaBordes_2_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_2_2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel42
             // 
@@ -3562,6 +3615,7 @@
             this.imgSalidaBordes_2_3.TabIndex = 0;
             this.imgSalidaBordes_2_3.TabStop = false;
             this.imgSalidaBordes_2_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_2_3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // Bordes_2
             // 
@@ -3591,6 +3645,7 @@
             this.imgSalidaBordes_2_1.TabIndex = 0;
             this.imgSalidaBordes_2_1.TabStop = false;
             this.imgSalidaBordes_2_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_2_1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage29
             // 
@@ -3643,6 +3698,7 @@
             this.imgSalidaBordes_3_4.TabIndex = 0;
             this.imgSalidaBordes_3_4.TabStop = false;
             this.imgSalidaBordes_3_4.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_3_4.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel47
             // 
@@ -3662,6 +3718,7 @@
             this.imgSalidaBordes_3_2.TabIndex = 0;
             this.imgSalidaBordes_3_2.TabStop = false;
             this.imgSalidaBordes_3_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_3_2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // panel48
             // 
@@ -3681,6 +3738,7 @@
             this.imgSalidaBordes_3_3.TabIndex = 0;
             this.imgSalidaBordes_3_3.TabStop = false;
             this.imgSalidaBordes_3_3.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_3_3.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // Bordes_3
             // 
@@ -3710,6 +3768,7 @@
             this.imgSalidaBordes_3_1.TabIndex = 0;
             this.imgSalidaBordes_3_1.TabStop = false;
             this.imgSalidaBordes_3_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaBordes_3_1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage30
             // 
@@ -3758,6 +3817,7 @@
             this.imgSalidaMagGrad.TabIndex = 0;
             this.imgSalidaMagGrad.TabStop = false;
             this.imgSalidaMagGrad.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgSalidaMagGrad.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // tabPage31
             // 
@@ -3797,6 +3857,7 @@
             this.imgPerfiladoSalida_2.TabIndex = 0;
             this.imgPerfiladoSalida_2.TabStop = false;
             this.imgPerfiladoSalida_2.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgPerfiladoSalida_2.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // Perfilado
             // 
@@ -3826,6 +3887,7 @@
             this.imgPerfiladoSalida_1.TabIndex = 0;
             this.imgPerfiladoSalida_1.TabStop = false;
             this.imgPerfiladoSalida_1.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imgPerfiladoSalida_1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // imagenOriginalZoom
             // 
@@ -3865,6 +3927,7 @@
             this.imagenDespues.TabIndex = 2;
             this.imagenDespues.TabStop = false;
             this.imagenDespues.DoubleClick += new System.EventHandler(this.imagenOriginalZoom_DoubleClick);
+            this.imagenDespues.MouseUp += new System.Windows.Forms.MouseEventHandler(this.imagen_MouseUp);
             // 
             // label9
             // 
@@ -4098,46 +4161,6 @@
             // 
             this.abrirImagenOcultar.FileName = "openFileDialog1";
             this.abrirImagenOcultar.FileOk += new System.ComponentModel.CancelEventHandler(this.abrirImagenOcultar_FileOk);
-            // 
-            // controlHistogramas1
-            // 
-            this.controlHistogramas1.Canales = null;
-            this.controlHistogramas1.Location = new System.Drawing.Point(743, 33);
-            this.controlHistogramas1.Name = "controlHistogramas1";
-            this.controlHistogramas1.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas1.TabIndex = 17;
-            // 
-            // controlHistogramas_estiramiento_salida
-            // 
-            this.controlHistogramas_estiramiento_salida.Canales = null;
-            this.controlHistogramas_estiramiento_salida.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_salida.Name = "controlHistogramas_estiramiento_salida";
-            this.controlHistogramas_estiramiento_salida.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_salida.TabIndex = 0;
-            // 
-            // controlHistogramas_estiramiento_entrada
-            // 
-            this.controlHistogramas_estiramiento_entrada.Canales = null;
-            this.controlHistogramas_estiramiento_entrada.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramas_estiramiento_entrada.Name = "controlHistogramas_estiramiento_entrada";
-            this.controlHistogramas_estiramiento_entrada.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramas_estiramiento_entrada.TabIndex = 0;
-            // 
-            // controlHistogramasEqualizacion2
-            // 
-            this.controlHistogramasEqualizacion2.Canales = null;
-            this.controlHistogramasEqualizacion2.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramasEqualizacion2.Name = "controlHistogramasEqualizacion2";
-            this.controlHistogramasEqualizacion2.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramasEqualizacion2.TabIndex = 0;
-            // 
-            // controlHistogramasEqualizacion1
-            // 
-            this.controlHistogramasEqualizacion1.Canales = null;
-            this.controlHistogramasEqualizacion1.Location = new System.Drawing.Point(6, 3);
-            this.controlHistogramasEqualizacion1.Name = "controlHistogramasEqualizacion1";
-            this.controlHistogramasEqualizacion1.Size = new System.Drawing.Size(587, 638);
-            this.controlHistogramasEqualizacion1.TabIndex = 0;
             // 
             // FormImagenes
             // 
@@ -4437,7 +4460,6 @@
         private System.Windows.Forms.Button ocultarMensaje;
         private System.Windows.Forms.PictureBox imgMensajeEstaganografia;
         private System.Windows.Forms.SaveFileDialog saveImageDialog;
-        private System.Windows.Forms.ToolStripMenuItem guardarImagenToolStripMenuItem;
         private System.Windows.Forms.Button btnImgOcultar;
         private System.Windows.Forms.PictureBox imgAOcultar;
         private System.Windows.Forms.OpenFileDialog abrirImagenOcultar;

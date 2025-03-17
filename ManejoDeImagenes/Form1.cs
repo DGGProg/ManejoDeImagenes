@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.Text;
 using System.Windows.Forms;
 
@@ -9,6 +10,8 @@ namespace ManejoDeImagenes
 {
     public partial class FormImagenes : Form
     {
+        private Image ImageToSave;
+
         public FormImagenes()
         {
             InitializeComponent();
@@ -174,52 +177,9 @@ namespace ManejoDeImagenes
 
         private void saveImageDialog_FileOk(object sender, CancelEventArgs e)
         {
-            switch (tabControl1.SelectedIndex)
+            if (ImageToSave != null)
             {
-                case 0:
-                    if (imagenDespuesCorte.Image != null)
-                    {
-                        imagenDespuesCorte.Image.Save(saveImageDialog.FileName);
-                    }
-                    break;
-                case 2:
-                    if (imagenGrisAverage.Image != null)
-                    {
-                        imagenGrisAverage.Image.Save(saveImageDialog.FileName);
-                    }
-                    break;
-                case 4:
-                    if (imgMensajeEstaganografia.Image != null)
-                    {
-                        imgMensajeEstaganografia.Image.Save(saveImageDialog.FileName);
-                    }
-                    break;
-                case 6:
-                    if (imgUmbralBinarioDespues.Image != null)
-                    {
-                        imgUmbralBinarioDespues.Image.Save(saveImageDialog.FileName);
-                    }
-                    break;
-                case 11:
-                    if (imagenBoolenaResultado.Image != null)
-                    {
-                        imagenBoolenaResultado.Image.Save(saveImageDialog.FileName,System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
-                    break;
-                case 16:
-                    if (imgRuidoDes.Image != null)
-                    {
-                        imgRuidoDes.Image.Save(saveImageDialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
-                    break;
-                case 21:
-                    if (imgSalidaMagGrad.Image != null)
-                    {
-                        imgSalidaMagGrad.Image.Save(saveImageDialog.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
-                    }
-                    break;
-                default:
-                    break;
+                ImageToSave.Save(saveImageDialog.FileName.Replace(".bmp","") + ".bmp", ImageFormat.Bmp);
             }
         }
 
@@ -381,7 +341,6 @@ namespace ManejoDeImagenes
                 panelUmbralEscalon.Controls.Add(txtUmbral[i]);
                 panelUmbralEscalon.Controls.Add(lbUmbral[i]);
             }
-
         }
 
         private void tabControl1_SelectedIndexChanged(object sender, EventArgs e)
@@ -419,7 +378,6 @@ namespace ManejoDeImagenes
                 
                 
             }
-
         }
 
         private void btAND_Click(object sender, EventArgs e)
@@ -663,6 +621,15 @@ namespace ManejoDeImagenes
             {
                 var pictureBox = (PictureBox)sender;
                 pictureBox.Location = new Point(pictureBox.Left + e.X, pictureBox.Top + e.Y);
+            }
+        }
+
+        private void imagen_MouseUp(object sender, MouseEventArgs e)
+        {
+            ImageToSave = ((PictureBox)sender).Image;
+            if (e.Button == MouseButtons.Right)
+            {
+                saveImageDialog.ShowDialog();
             }
         }
     }
