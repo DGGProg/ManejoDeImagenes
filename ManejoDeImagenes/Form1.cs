@@ -36,24 +36,6 @@ namespace ManejoDeImagenes
         {
             imagenOriginalZoom.ImageLocation = DialogoAbrirImagen.FileName;
             imagenOriginalZoom.SizeMode = PictureBoxSizeMode.Zoom;
-          
-            ///imagenes nuevas
-            imagenDespuesCorte.Image = null;
-            imagenDespuesCuant.Image = null;
-            imagenGrisLightness.Image = null;
-            imagenGrisAverage.Image = null;
-            imagenGrisLuminosity.Image = null;
-
-            imgMensajeEstaganografia.Image = null;
-            imgDespuesOpUn.Image = null;
-
-            imagenDespuesCorte.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenDespuesCuant.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisLightness.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisAverage.SizeMode = PictureBoxSizeMode.Zoom;
-            imagenGrisLuminosity.SizeMode = PictureBoxSizeMode.Zoom;
-
-            imgMensajeEstaganografia.SizeMode = PictureBoxSizeMode.Zoom;
         }
 
         private void bGenerarImagen_Click(object sender, EventArgs e)
@@ -61,37 +43,51 @@ namespace ManejoDeImagenes
             if (imagenOriginalZoom.Image != null)
             {
                 imgDespuesOpUn.Image = OperacionesUnarias.aplicaOperaciones(imagenOriginalZoom.Image, (int)suma1.Value, (int)suma2.Value, (int)suma3.Value, mult1.Value, mult2.Value, mult3.Value, div1.Value, div2.Value, div3.Value, gama1.Value, gama2.Value, gama3.Value);
+                imgDespuesOpUn.Image = OperacionesUnarias.invierteCanales(imgDespuesOpUn.Image, dropCanalR.SelectedIndex, dropCanalG.SelectedIndex, dropCanalB.SelectedIndex);
             }
         }
 
         private void btCortar_Click(object sender, EventArgs e)
         {
-            if (imagenDespuesCorte.Image != null)
+            try
             {
-                imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
-            }
-            else
-            {
-                if (imagenOriginalZoom.Image != null)
+                if (imagenDespuesCorte.Image != null)
                 {
-                    imagenDespuesCorte.Image = Corte.cortarImagen(imagenOriginalZoom.Image);
+                    imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
                 }
+                else
+                {
+                    if (imagenOriginalZoom.Image != null)
+                    {
+                        imagenDespuesCorte.Image = Corte.cortarImagen(imagenOriginalZoom.Image);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (imagenDespuesCorte.Image != null)
+            try
             {
-                imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
-            }
-            else
-            {
-                if (imagenOriginalZoom.Image != null)
+                if (imagenDespuesCorte.Image != null)
                 {
-                    imagenDespuesCorte.Image = Corte.agrandarImagen(imagenOriginalZoom.Image);
+                    imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
                 }
+                else
+                {
+                    if (imagenOriginalZoom.Image != null)
+                    {
+                        imagenDespuesCorte.Image = Corte.agrandarImagen(imagenOriginalZoom.Image);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
         }
 
@@ -347,6 +343,11 @@ namespace ManejoDeImagenes
         {
             switch (tabControl1.SelectedIndex)
             {
+                case 5:
+                    dropCanalR.SelectedIndex = 2;
+                    dropCanalG.SelectedIndex = 1;
+                    dropCanalB.SelectedIndex = 0;
+                    break;
                 case 8:
                     numericUpDown2_ValueChanged(null, System.EventArgs.Empty);
                     break;
@@ -373,10 +374,9 @@ namespace ManejoDeImagenes
                     imagenUmbralesEscalonDespues.Image = OperacionesUnarias.umbralEscalon(imagenOriginalZoom.Image, umbrales);
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-                
-                
+               MessageBox.Show(ex.ToString());
             }
         }
 

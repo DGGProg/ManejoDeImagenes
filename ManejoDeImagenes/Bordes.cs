@@ -61,9 +61,9 @@ namespace ManejoDeImagenes
                                     R = G = B = 0;
                                     byte* punteroPixelaux = punteroPixel;
                                     punteroPixelaux = punteroPixel - 3;
-                                    R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                    R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                     G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                    B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                    B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                     if (pSumar_128)
                                     {
                                         R += 128;
@@ -100,9 +100,9 @@ namespace ManejoDeImagenes
                                     R = G = B = 0;
                                     byte* punteroPixelaux = punteroPixel;
                                     punteroPixelaux = punteroPixel - 3;
-                                    R += (punteroPixelaux[0] * -1) + punteroPixel[2];
+                                    R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                     G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                    B += (punteroPixelaux[2] * -1) + punteroPixel[0];
+                                    B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                     if (pSumar_128)
                                     {
                                         R += 128;
@@ -234,9 +234,9 @@ namespace ManejoDeImagenes
                                     R = G = B = 0;
                                     byte* punteroPixelaux = punteroPixel;
                                     punteroPixelaux = punteroPixel - (anchoImagen * 3);
-                                    R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                    R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                     G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                    B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                    B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                     if (pSumar_128)
                                     {
                                         R += 128;
@@ -273,9 +273,9 @@ namespace ManejoDeImagenes
                                     R = G = B = 0;
                                     byte* punteroPixelaux = punteroPixel;
                                     punteroPixelaux = punteroPixel - (anchoImagen * 4);
-                                    R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                    R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                     G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                    B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                    B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                     if (pSumar_128)
                                     {
                                         R += 128;
@@ -399,9 +399,9 @@ namespace ManejoDeImagenes
                             case PixelFormat.Format1bppIndexed:
                                 break;
                             case PixelFormat.Format24bppRgb:
-                                R = (int)(decimal)punteroPixel[0];
+                                R = (int)(decimal)punteroPixel[2];
                                 G = (int)(decimal)punteroPixel[1];
-                                B = (int)(decimal)punteroPixel[2];
+                                B = (int)(decimal)punteroPixel[0];
                                 if (renglon >= 1)
                                 {
                                     if (columna >= 1)
@@ -409,9 +409,9 @@ namespace ManejoDeImagenes
                                         R = G = B = 0;
                                         byte* punteroPixelaux = punteroPixel;
                                         punteroPixelaux = punteroPixel - 3 - (anchoImagen * 3);
-                                        R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                        R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                         G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                        B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                        B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                         if (pSumar_128)
                                         {
                                             R += 128;
@@ -433,16 +433,16 @@ namespace ManejoDeImagenes
                                     G = 0;
                                 if (B < 0)
                                     B = 0;
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 3;
                                 break;
                             case PixelFormat.Format32bppArgb:
-                                R = (int)(decimal)punteroPixel[0];
+                                R = (int)(decimal)punteroPixel[2];
                                 G = (int)(decimal)punteroPixel[1];
-                                B = (int)(decimal)punteroPixel[2];
+                                B = (int)(decimal)punteroPixel[0];
                                 if (renglon >= 1)
                                 {
                                     if (columna >= 1)
@@ -450,9 +450,9 @@ namespace ManejoDeImagenes
                                         R = G = B = 0;
                                         byte* punteroPixelaux = punteroPixel;
                                         punteroPixelaux = punteroPixel - 3 - (anchoImagen * 4);
-                                        R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                        R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                         G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                        B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                        B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                         if (pSumar_128)
                                         {
                                             R += 128;
@@ -474,9 +474,9 @@ namespace ManejoDeImagenes
                                     G = 0;
                                 if (B < 0)
                                     B = 0;
-                                punteroPixelSalida[0] = (byte)R;
+                                punteroPixelSalida[2] = (byte)R;
                                 punteroPixelSalida[1] = (byte)G;
-                                punteroPixelSalida[2] = (byte)B;
+                                punteroPixelSalida[0] = (byte)B;
                                 punteroPixelSalida += 3;
                                 punteroPixel += 4;
                                 break;
@@ -586,9 +586,9 @@ namespace ManejoDeImagenes
                                         R = G = B = 0;
                                         byte* punteroPixelaux = punteroPixel;
                                         punteroPixelaux = punteroPixel + 3 - (anchoImagen * 3);
-                                        R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                        R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                         G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                        B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                        B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                         if(pSumar_128)
                                         {
                                             R += 128;
@@ -627,9 +627,9 @@ namespace ManejoDeImagenes
                                         R = G = B = 0;
                                         byte* punteroPixelaux = punteroPixel;
                                         punteroPixelaux = punteroPixel + 3 - (anchoImagen * 4);
-                                        R += (punteroPixelaux[0] * -1) + punteroPixel[0];
+                                        R += (punteroPixelaux[2] * -1) + punteroPixel[2];
                                         G += (punteroPixelaux[1] * -1) + punteroPixel[1];
-                                        B += (punteroPixelaux[2] * -1) + punteroPixel[2];
+                                        B += (punteroPixelaux[0] * -1) + punteroPixel[0];
                                         if (pSumar_128)
                                         {
                                             R += 128;
@@ -779,9 +779,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -829,9 +829,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -992,9 +992,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1042,9 +1042,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1205,9 +1205,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1255,9 +1255,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1418,9 +1418,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1468,9 +1468,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1631,9 +1631,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1681,9 +1681,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1844,9 +1844,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -1894,9 +1894,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2057,9 +2057,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2107,9 +2107,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2270,9 +2270,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2320,9 +2320,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2497,12 +2497,12 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascaraX[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascaraX[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascaraX[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascaraX[i + 1, j + 1];
-                                                R_1 += punteroPixelaux[0] * mascaraY[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascaraX[i + 1, j + 1];
+                                                R_1 += punteroPixelaux[2] * mascaraY[i + 1, j + 1];
                                                 G_1 += punteroPixelaux[1] * mascaraY[i + 1, j + 1];
-                                                B_1 += punteroPixelaux[2] * mascaraY[i + 1, j + 1];
+                                                B_1 += punteroPixelaux[0] * mascaraY[i + 1, j + 1];
                                             }
                                         }
                                         R = (int)Math.Sqrt(Math.Pow(R, 2) + Math.Pow(R_1, 2));
@@ -2550,12 +2550,12 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascaraX[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascaraX[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascaraX[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascaraX[i + 1, j + 1];
-                                                R_1 += punteroPixelaux[0] * mascaraY[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascaraX[i + 1, j + 1];
+                                                R_1 += punteroPixelaux[2] * mascaraY[i + 1, j + 1];
                                                 G_1 += punteroPixelaux[1] * mascaraY[i + 1, j + 1];
-                                                B_1 += punteroPixelaux[2] * mascaraY[i + 1, j + 1];
+                                                B_1 += punteroPixelaux[0] * mascaraY[i + 1, j + 1];
                                             }
                                         }
                                         R = (int)Math.Sqrt(Math.Pow(R, 2) + Math.Pow(R_1, 2));
@@ -2713,9 +2713,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2763,9 +2763,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2926,9 +2926,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 3) + (j * 3);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
@@ -2976,9 +2976,9 @@ namespace ManejoDeImagenes
                                             for (int j = -1; j <= 1; j++)
                                             {
                                                 punteroPixelaux = punteroPixel + (i * anchoImagen * 4) + (j * 4);
-                                                R += punteroPixelaux[0] * mascara[i + 1, j + 1];
+                                                R += punteroPixelaux[2] * mascara[i + 1, j + 1];
                                                 G += punteroPixelaux[1] * mascara[i + 1, j + 1];
-                                                B += punteroPixelaux[2] * mascara[i + 1, j + 1];
+                                                B += punteroPixelaux[0] * mascara[i + 1, j + 1];
                                             }
                                         }
                                         if (pSumar_128)
