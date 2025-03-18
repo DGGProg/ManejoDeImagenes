@@ -85,6 +85,10 @@
             this.gama1 = new System.Windows.Forms.NumericUpDown();
             this.gama2 = new System.Windows.Forms.NumericUpDown();
             this.gama3 = new System.Windows.Forms.NumericUpDown();
+            this.label54 = new System.Windows.Forms.Label();
+            this.dropCanalR = new System.Windows.Forms.ComboBox();
+            this.dropCanalG = new System.Windows.Forms.ComboBox();
+            this.dropCanalB = new System.Windows.Forms.ComboBox();
             this.bGenerarImagen = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
@@ -342,10 +346,6 @@
             this.contrasteAzul = new System.Windows.Forms.NumericUpDown();
             this.saveImageDialog = new System.Windows.Forms.SaveFileDialog();
             this.abrirImagenOcultar = new System.Windows.Forms.OpenFileDialog();
-            this.label54 = new System.Windows.Forms.Label();
-            this.dropCanalR = new System.Windows.Forms.ComboBox();
-            this.dropCanalG = new System.Windows.Forms.ComboBox();
-            this.dropCanalB = new System.Windows.Forms.ComboBox();
             this.controlHistogramas1 = new ManejoDeImagenes.ControlHistogramas();
             this.controlHistogramas_estiramiento_salida = new ManejoDeImagenes.ControlHistogramas();
             this.controlHistogramas_estiramiento_entrada = new ManejoDeImagenes.ControlHistogramas();
@@ -650,16 +650,16 @@
             // 
             this.panel3.AutoScroll = true;
             this.panel3.Controls.Add(this.imagenDespuesCorte);
-            this.panel3.Location = new System.Drawing.Point(663, 56);
+            this.panel3.Location = new System.Drawing.Point(363, 56);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(667, 612);
+            this.panel3.Size = new System.Drawing.Size(967, 612);
             this.panel3.TabIndex = 5;
             // 
             // imagenDespuesCorte
             // 
             this.imagenDespuesCorte.Location = new System.Drawing.Point(1, 0);
             this.imagenDespuesCorte.Name = "imagenDespuesCorte";
-            this.imagenDespuesCorte.Size = new System.Drawing.Size(650, 600);
+            this.imagenDespuesCorte.Size = new System.Drawing.Size(960, 600);
             this.imagenDespuesCorte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.imagenDespuesCorte.TabIndex = 1;
             this.imagenDespuesCorte.TabStop = false;
@@ -740,7 +740,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(997, 37);
+            this.label12.Location = new System.Drawing.Point(847, 20);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(85, 13);
             this.label12.TabIndex = 8;
@@ -749,7 +749,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(659, 361);
+            this.label11.Location = new System.Drawing.Point(366, 344);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(94, 13);
             this.label11.TabIndex = 7;
@@ -758,7 +758,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(656, 37);
+            this.label10.Location = new System.Drawing.Point(363, 20);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(90, 13);
             this.label10.TabIndex = 6;
@@ -766,9 +766,9 @@
             // 
             // imagenGrisLuminosity
             // 
-            this.imagenGrisLuminosity.Location = new System.Drawing.Point(659, 377);
+            this.imagenGrisLuminosity.Location = new System.Drawing.Point(366, 360);
             this.imagenGrisLuminosity.Name = "imagenGrisLuminosity";
-            this.imagenGrisLuminosity.Size = new System.Drawing.Size(325, 300);
+            this.imagenGrisLuminosity.Size = new System.Drawing.Size(480, 300);
             this.imagenGrisLuminosity.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenGrisLuminosity.TabIndex = 5;
             this.imagenGrisLuminosity.TabStop = false;
@@ -777,9 +777,9 @@
             // 
             // imagenGrisAverage
             // 
-            this.imagenGrisAverage.Location = new System.Drawing.Point(1000, 56);
+            this.imagenGrisAverage.Location = new System.Drawing.Point(850, 39);
             this.imagenGrisAverage.Name = "imagenGrisAverage";
-            this.imagenGrisAverage.Size = new System.Drawing.Size(325, 300);
+            this.imagenGrisAverage.Size = new System.Drawing.Size(480, 300);
             this.imagenGrisAverage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenGrisAverage.TabIndex = 4;
             this.imagenGrisAverage.TabStop = false;
@@ -788,9 +788,9 @@
             // 
             // imagenGrisLightness
             // 
-            this.imagenGrisLightness.Location = new System.Drawing.Point(659, 56);
+            this.imagenGrisLightness.Location = new System.Drawing.Point(366, 39);
             this.imagenGrisLightness.Name = "imagenGrisLightness";
-            this.imagenGrisLightness.Size = new System.Drawing.Size(325, 300);
+            this.imagenGrisLightness.Size = new System.Drawing.Size(480, 300);
             this.imagenGrisLightness.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenGrisLightness.TabIndex = 3;
             this.imagenGrisLightness.TabStop = false;
@@ -908,9 +908,9 @@
             // 
             this.panel4.AutoScroll = true;
             this.panel4.Controls.Add(this.imgDespuesOpUn);
-            this.panel4.Location = new System.Drawing.Point(675, 144);
+            this.panel4.Location = new System.Drawing.Point(363, 144);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(650, 524);
+            this.panel4.Size = new System.Drawing.Size(962, 524);
             this.panel4.TabIndex = 5;
             // 
             // imgDespuesOpUn
@@ -918,7 +918,7 @@
             this.imgDespuesOpUn.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgDespuesOpUn.Location = new System.Drawing.Point(0, 0);
             this.imgDespuesOpUn.Name = "imgDespuesOpUn";
-            this.imgDespuesOpUn.Size = new System.Drawing.Size(650, 524);
+            this.imgDespuesOpUn.Size = new System.Drawing.Size(962, 524);
             this.imgDespuesOpUn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgDespuesOpUn.TabIndex = 1;
             this.imgDespuesOpUn.TabStop = false;
@@ -1303,6 +1303,51 @@
             0,
             0});
             // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(1098, 0);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(79, 13);
+            this.label54.TabIndex = 19;
+            this.label54.Text = "Canal de salida";
+            // 
+            // dropCanalR
+            // 
+            this.dropCanalR.FormattingEnabled = true;
+            this.dropCanalR.Items.AddRange(new object[] {
+            "B",
+            "G",
+            "R"});
+            this.dropCanalR.Location = new System.Drawing.Point(1098, 28);
+            this.dropCanalR.Name = "dropCanalR";
+            this.dropCanalR.Size = new System.Drawing.Size(121, 21);
+            this.dropCanalR.TabIndex = 20;
+            // 
+            // dropCanalG
+            // 
+            this.dropCanalG.FormattingEnabled = true;
+            this.dropCanalG.Items.AddRange(new object[] {
+            "B",
+            "G",
+            "R"});
+            this.dropCanalG.Location = new System.Drawing.Point(1098, 53);
+            this.dropCanalG.Name = "dropCanalG";
+            this.dropCanalG.Size = new System.Drawing.Size(121, 21);
+            this.dropCanalG.TabIndex = 21;
+            // 
+            // dropCanalB
+            // 
+            this.dropCanalB.FormattingEnabled = true;
+            this.dropCanalB.Items.AddRange(new object[] {
+            "B",
+            "G",
+            "R"});
+            this.dropCanalB.Location = new System.Drawing.Point(1098, 78);
+            this.dropCanalB.Name = "dropCanalB";
+            this.dropCanalB.Size = new System.Drawing.Size(121, 21);
+            this.dropCanalB.TabIndex = 22;
+            // 
             // bGenerarImagen
             // 
             this.bGenerarImagen.Location = new System.Drawing.Point(612, 115);
@@ -1566,9 +1611,9 @@
             // 
             this.panel6.AutoScroll = true;
             this.panel6.Controls.Add(this.imgUmbralBinarioDespues);
-            this.panel6.Location = new System.Drawing.Point(675, 147);
+            this.panel6.Location = new System.Drawing.Point(363, 147);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(650, 524);
+            this.panel6.Size = new System.Drawing.Size(962, 524);
             this.panel6.TabIndex = 6;
             // 
             // imgUmbralBinarioDespues
@@ -1576,7 +1621,7 @@
             this.imgUmbralBinarioDespues.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgUmbralBinarioDespues.Location = new System.Drawing.Point(0, 0);
             this.imgUmbralBinarioDespues.Name = "imgUmbralBinarioDespues";
-            this.imgUmbralBinarioDespues.Size = new System.Drawing.Size(650, 524);
+            this.imgUmbralBinarioDespues.Size = new System.Drawing.Size(962, 524);
             this.imgUmbralBinarioDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgUmbralBinarioDespues.TabIndex = 0;
             this.imgUmbralBinarioDespues.TabStop = false;
@@ -1598,9 +1643,9 @@
             // 
             this.panel9.AutoScroll = true;
             this.panel9.Controls.Add(this.imgUmbralCorteDespues);
-            this.panel9.Location = new System.Drawing.Point(675, 146);
+            this.panel9.Location = new System.Drawing.Point(363, 146);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(650, 524);
+            this.panel9.Size = new System.Drawing.Size(962, 524);
             this.panel9.TabIndex = 10;
             // 
             // imgUmbralCorteDespues
@@ -1608,7 +1653,7 @@
             this.imgUmbralCorteDespues.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgUmbralCorteDespues.Location = new System.Drawing.Point(0, 0);
             this.imgUmbralCorteDespues.Name = "imgUmbralCorteDespues";
-            this.imgUmbralCorteDespues.Size = new System.Drawing.Size(650, 524);
+            this.imgUmbralCorteDespues.Size = new System.Drawing.Size(962, 524);
             this.imgUmbralCorteDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgUmbralCorteDespues.TabIndex = 0;
             this.imgUmbralCorteDespues.TabStop = false;
@@ -1932,9 +1977,9 @@
             // 
             this.panel12.AutoScroll = true;
             this.panel12.Controls.Add(this.imagenUmbralesEscalonDespues);
-            this.panel12.Location = new System.Drawing.Point(662, 146);
+            this.panel12.Location = new System.Drawing.Point(363, 146);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(668, 524);
+            this.panel12.Size = new System.Drawing.Size(967, 524);
             this.panel12.TabIndex = 11;
             // 
             // imagenUmbralesEscalonDespues
@@ -1942,7 +1987,7 @@
             this.imagenUmbralesEscalonDespues.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imagenUmbralesEscalonDespues.Location = new System.Drawing.Point(0, 0);
             this.imagenUmbralesEscalonDespues.Name = "imagenUmbralesEscalonDespues";
-            this.imagenUmbralesEscalonDespues.Size = new System.Drawing.Size(668, 524);
+            this.imagenUmbralesEscalonDespues.Size = new System.Drawing.Size(967, 524);
             this.imagenUmbralesEscalonDespues.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imagenUmbralesEscalonDespues.TabIndex = 0;
             this.imagenUmbralesEscalonDespues.TabStop = false;
@@ -3114,9 +3159,9 @@
             // 
             this.panel29.AutoScroll = true;
             this.panel29.Controls.Add(this.imgRuidoDes);
-            this.panel29.Location = new System.Drawing.Point(669, 143);
+            this.panel29.Location = new System.Drawing.Point(361, 143);
             this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(661, 522);
+            this.panel29.Size = new System.Drawing.Size(969, 522);
             this.panel29.TabIndex = 13;
             // 
             // imgRuidoDes
@@ -3124,7 +3169,7 @@
             this.imgRuidoDes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgRuidoDes.Location = new System.Drawing.Point(0, 0);
             this.imgRuidoDes.Name = "imgRuidoDes";
-            this.imgRuidoDes.Size = new System.Drawing.Size(661, 522);
+            this.imgRuidoDes.Size = new System.Drawing.Size(969, 522);
             this.imgRuidoDes.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgRuidoDes.TabIndex = 0;
             this.imgRuidoDes.TabStop = false;
@@ -3368,9 +3413,9 @@
             // 
             this.panel32.AutoScroll = true;
             this.panel32.Controls.Add(this.imgFiltrosSalida);
-            this.panel32.Location = new System.Drawing.Point(669, 143);
+            this.panel32.Location = new System.Drawing.Point(371, 82);
             this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(661, 522);
+            this.panel32.Size = new System.Drawing.Size(959, 583);
             this.panel32.TabIndex = 13;
             // 
             // imgFiltrosSalida
@@ -3378,7 +3423,7 @@
             this.imgFiltrosSalida.Dock = System.Windows.Forms.DockStyle.Fill;
             this.imgFiltrosSalida.Location = new System.Drawing.Point(0, 0);
             this.imgFiltrosSalida.Name = "imgFiltrosSalida";
-            this.imgFiltrosSalida.Size = new System.Drawing.Size(661, 522);
+            this.imgFiltrosSalida.Size = new System.Drawing.Size(959, 583);
             this.imgFiltrosSalida.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgFiltrosSalida.TabIndex = 0;
             this.imgFiltrosSalida.TabStop = false;
@@ -3795,16 +3840,17 @@
             // 
             this.panel53.AutoScroll = true;
             this.panel53.Controls.Add(this.imgSalidaMagGrad);
-            this.panel53.Location = new System.Drawing.Point(669, 45);
+            this.panel53.Location = new System.Drawing.Point(355, 45);
             this.panel53.Name = "panel53";
-            this.panel53.Size = new System.Drawing.Size(661, 620);
+            this.panel53.Size = new System.Drawing.Size(975, 620);
             this.panel53.TabIndex = 13;
             // 
             // imgSalidaMagGrad
             // 
-            this.imgSalidaMagGrad.Location = new System.Drawing.Point(3, 3);
+            this.imgSalidaMagGrad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imgSalidaMagGrad.Location = new System.Drawing.Point(0, 0);
             this.imgSalidaMagGrad.Name = "imgSalidaMagGrad";
-            this.imgSalidaMagGrad.Size = new System.Drawing.Size(650, 614);
+            this.imgSalidaMagGrad.Size = new System.Drawing.Size(975, 620);
             this.imgSalidaMagGrad.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.imgSalidaMagGrad.TabIndex = 0;
             this.imgSalidaMagGrad.TabStop = false;
@@ -4153,51 +4199,6 @@
             // 
             this.abrirImagenOcultar.FileName = "openFileDialog1";
             this.abrirImagenOcultar.FileOk += new System.ComponentModel.CancelEventHandler(this.abrirImagenOcultar_FileOk);
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(1098, 0);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(79, 13);
-            this.label54.TabIndex = 19;
-            this.label54.Text = "Canal de salida";
-            // 
-            // dropCanalR
-            // 
-            this.dropCanalR.FormattingEnabled = true;
-            this.dropCanalR.Items.AddRange(new object[] {
-            "B",
-            "G",
-            "R"});
-            this.dropCanalR.Location = new System.Drawing.Point(1098, 28);
-            this.dropCanalR.Name = "dropCanalR";
-            this.dropCanalR.Size = new System.Drawing.Size(121, 21);
-            this.dropCanalR.TabIndex = 20;
-            // 
-            // dropCanalG
-            // 
-            this.dropCanalG.FormattingEnabled = true;
-            this.dropCanalG.Items.AddRange(new object[] {
-            "B",
-            "G",
-            "R"});
-            this.dropCanalG.Location = new System.Drawing.Point(1098, 53);
-            this.dropCanalG.Name = "dropCanalG";
-            this.dropCanalG.Size = new System.Drawing.Size(121, 21);
-            this.dropCanalG.TabIndex = 21;
-            // 
-            // dropCanalB
-            // 
-            this.dropCanalB.FormattingEnabled = true;
-            this.dropCanalB.Items.AddRange(new object[] {
-            "B",
-            "G",
-            "R"});
-            this.dropCanalB.Location = new System.Drawing.Point(1098, 78);
-            this.dropCanalB.Name = "dropCanalB";
-            this.dropCanalB.Size = new System.Drawing.Size(121, 21);
-            this.dropCanalB.TabIndex = 22;
             // 
             // controlHistogramas1
             // 

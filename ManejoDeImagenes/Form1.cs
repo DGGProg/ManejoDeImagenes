@@ -75,7 +75,7 @@ namespace ManejoDeImagenes
             {
                 if (imagenDespuesCorte.Image != null)
                 {
-                    imagenDespuesCorte.Image = Corte.cortarImagen(imagenDespuesCorte.Image);
+                    imagenDespuesCorte.Image = Corte.agrandarImagen(imagenDespuesCorte.Image);
                 }
                 else
                 {
