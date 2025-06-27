@@ -19,7 +19,7 @@ namespace ManejoDeImagenes
 
         private void acercaDeToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("El presente programa es una suit de manejo de imágenes que tiene como propósito acompañar el desarrollo de los capítulos del libro Digital Image Processing Gonzales, Woods.\r\n\r\nLa forma de usarlo da click en el menú Inicio Abrir Imagen para cargar la imagen de entrada a usar en los diferentes métodos.\r\n\r\nDa doble click en cualquier imagen para abrir el tamaño original en una ventana nueva.\r\n\r\nDa click derecho en las imágenes de salida para guardarlas en un archivo.\r\n\r\nNota: acepta imágenes de entrada de 8bpp escala de grises, 24bppRGB y 32bppARGB y da todas las imágenes de salida como 24bppRGB.\r\n\r\n");
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
